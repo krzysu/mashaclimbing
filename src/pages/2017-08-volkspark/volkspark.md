@@ -33,6 +33,6 @@ There are several ways people traverse the wall:
 
 I would say I am on the intermediate level and tried to use the wall only, but all parts of it. We recorded some of it, check it out:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2wJCiDH7wac?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2wJCiDH7wac?rel=0" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 
 That was very nice Sunday! I am so happy that I can stay active and enjoy being outside even when not everything is according to the plan 😉

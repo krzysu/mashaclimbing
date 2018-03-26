@@ -1,0 +1,46 @@
+.wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 1em;
+
+  @media (min-width: $break-point-l) {
+    max-width: 800px;
+  }
+
+  &--wide {
+    max-width: 1100px;
+
+    @media (min-width: $break-point-l) {
+      max-width: 1200px;
+    }
+  }
+}
+
+.body {
+  background-color: $color-reverse;
+  // background-image: url(https://basehold.it/i/27);
+  // background-image: url(/static/images/27.png);
+}
+
+.grid {
+  display: flex;
+
+  @media (max-width: $break-point-m) {
+    display: block;
+  }
+
+  &__item {
+    margin-right: 3em;
+    flex-grow: 1;
+    flex-basis: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @media (max-width: $break-point-m) {
+      margin-right: 0;
+      margin-bottom: 1.5em;
+    }
+  }
+}

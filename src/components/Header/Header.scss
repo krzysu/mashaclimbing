@@ -1,0 +1,16 @@
+@import '../../stylesheets/vars';
+@import '../../stylesheets/mixins';
+
+.header {
+  @include reverse-bg;
+  line-height: 3em;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    @include link-alt;
+  }
+}

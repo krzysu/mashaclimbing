@@ -1,0 +1,36 @@
+.page {
+  &__header {
+    text-align: center;
+    padding: 3em 0;
+  }
+
+  &__title {
+    margin-bottom: 0.3em;
+  }
+
+  &__subtitle {
+    max-width: 75%;
+    margin: 0 auto;
+
+    @media (max-width: $break-point-m) {
+      max-width: none;
+    }
+  }
+
+  &__links {
+    margin-bottom: 3em;
+  }
+
+  &__footer {
+    text-align: center;
+    margin: 3em 0 4.5em;
+  }
+
+  &__footer-copy {
+    margin-bottom: 1.5em;
+  }
+
+  &__author-item {
+    @include author-item-reversed;
+  }
+}

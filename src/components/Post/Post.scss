@@ -1,0 +1,47 @@
+@import '../../stylesheets/vars';
+
+.post-wrapper {
+  // margin-bottom: 4.5em;
+}
+
+.post {
+  padding: 1.5em 0;
+
+  img {
+    margin: 1.5em auto;
+    display: block;
+    max-width: 100%;
+  }
+
+  img + em {
+    text-align: center;
+    display: block;
+    margin-top: -1.5em;
+  }
+
+  &__published {
+    text-align: right;
+    color: #999;
+    margin-bottom: 1.5em;
+  }
+
+  .emojione {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  @media (min-width: $break-point-m) {
+    p {
+      text-align: justify;
+    }
+  }
+}
+
+.post-actions {
+  text-align: center;
+}
+
+.post-author-item {
+  padding-bottom: 1.5em;
+}

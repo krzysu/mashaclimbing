@@ -1,0 +1,40 @@
+@import './vars';
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin reverse-bg {
+  background-color: $color-alt;
+  color: $color-reverse-alt;
+
+  a,
+  em {
+    color: $color-reverse;
+  }
+}
+
+@mixin link-alt {
+  color: $color-reverse-alt;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@mixin author-item-reversed {
+  background-color: #efefef;
+  padding: 1.5em 0;
+}
+
+@mixin icon-base {
+  font-family: $font-family-icons;
+  font-size: 2em;
+  line-height: 1.5em;
+  display: inline-block;
+}

@@ -1,0 +1,29 @@
+@import '../../stylesheets/vars';
+@import '../../stylesheets/mixins';
+
+.footer {
+  @include reverse-bg;
+  padding: 1.5em 0;
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__link {
+    @include link-alt;
+  }
+
+  &__copyright {
+    text-align: center;
+    display: block;
+    margin: 1.6875em 0 0;
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../stylesheets/vars';
+@import '../../stylesheets/mixins';
+
+.author-item {
+  @include clearfix;
+
+  &__image {
+    max-width: 150px;
+    border-radius: 75px;
+    margin-right: 1.5em;
+    float: left;
+
+    @media (max-width: $break-point-m) {
+      margin: 0 auto 1.5em;
+      float: none;
+      display: block;
+    }
+  }
+
+  &__description {
+    overflow: hidden;
+  }
+}

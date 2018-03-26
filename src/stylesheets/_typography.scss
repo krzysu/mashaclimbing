@@ -1,0 +1,131 @@
+body {
+  font-family: $font-family;
+  font-size: 18px;
+  line-height: 1.5em;
+  color: $color-base;
+  background-color: $color-alt;
+  margin: 0;
+
+  @media (min-width: $break-point-l) {
+    font-size: 21px;
+    line-height: 1.5em;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-header;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.4444444444444444em;
+  line-height: 1.0384615384615385em;
+  margin-bottom: 1.0384615384615385em;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.3333333333333333em;
+  line-height: 1.125em;
+  margin-bottom: 1.125em;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.2222222222222223em;
+  line-height: 1.2272727272727273em;
+  margin-bottom: 1.2272727272727273em;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1.1111111111111112em;
+  line-height: 1.35em;
+  margin-bottom: 1.35em;
+}
+
+small {
+  margin: 0;
+  font-size: 0.8888888888888888em;
+  line-height: 1.6875em;
+  margin-bottom: 1.6875em;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 1.5em;
+}
+
+p,
+ul,
+ol,
+pre,
+hr {
+  margin: 1.5em 0;
+}
+
+ul,
+ol {
+  padding-left: 1.5em;
+}
+
+hr {
+  text-align: center;
+  border: 0;
+}
+
+hr::before {
+  content: '...';
+  display: inline-block;
+  color: $color-base;
+  font-size: 3em;
+  position: relative;
+  letter-spacing: 0.5em;
+  bottom: 0.57em;
+  left: 0.2em;
+}
+
+blockquote {
+  margin: 1.5em 0 1.5em -1.3em;
+  border-left: 0.3em solid $color-base;
+  font-style: italic;
+  padding-left: 1em;
+
+  @media (max-width: $break-point-m) {
+    margin-left: 0;
+  }
+}
+
+a {
+  color: $color-alt;
+}
+
+code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: #eee;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 0.2em 0.4em;
+  overflow-x: auto;
+
+  code {
+    padding: 0;
+    border-radius: 0;
+  }
+}
