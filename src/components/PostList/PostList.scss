@@ -1,0 +1,9 @@
+.post-list {
+  &__item {
+    &:last-child {
+      .post-list__separator {
+        display: none;
+      }
+    }
+  }
+}

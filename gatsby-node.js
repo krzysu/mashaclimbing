@@ -1,7 +1,5 @@
-const _ = require('lodash')
 const Promise = require('bluebird')
 const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
@@ -12,14 +10,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       graphql(
         `
           {
-            allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
+            allMarkdownRemark(
+              sort: { fields: [frontmatter___date], order: DESC }
+              limit: 1000
+            ) {
               edges {
                 node {
-                  fields {
-                    slug
-                  }
                   frontmatter {
-                    title
+                    path
                   }
                 }
               }
@@ -33,36 +31,14 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         }
 
         // Create blog posts pages.
-        const posts = result.data.allMarkdownRemark.edges;
-
-        _.each(posts, (post, index) => {
-          const previous = index === posts.length - 1 ? false : posts[index + 1].node;
-          const next = index === 0 ? false : posts[index - 1].node;
-
+        result.data.allMarkdownRemark.edges.forEach((post, index) => {
           createPage({
-            path: post.node.fields.slug,
+            path: post.node.frontmatter.path,
             component: blogPost,
-            context: {
-              slug: post.node.fields.slug,
-              previous,
-              next,
-            },
+            context: {},
           })
         })
       })
     )
   })
-}
-
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-  const { createNodeField } = boundActionCreators
-
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
-  }
 }

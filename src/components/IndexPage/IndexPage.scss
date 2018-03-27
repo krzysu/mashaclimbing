@@ -1,0 +1,11 @@
+@import '~stylesheets/mixins';
+
+.index-page {
+  &__post-list {
+    padding: 0 0 3em;
+  }
+
+  &__author-item {
+    @include author-item-reversed;
+  }
+}

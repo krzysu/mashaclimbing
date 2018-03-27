@@ -1,37 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import AuthorItem from '../components/AuthorItem/AuthorItem'
+import IndexPage from 'components/IndexPage/IndexPage'
 
-class BlogIndex extends React.Component {
-  render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allMarkdownRemark.edges')
-
-    return (
-      <div className="wrapper">
-        <Helmet title={siteTitle} />
-
-        {posts.map(({ node }) => {
-          const title = get(node, 'frontmatter.title') || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3>
-                <Link style={{ boxShadow: 'none' }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            </div>
-          )
-        })}
-
-        <AuthorItem />
-      </div>
-    )
-  }
+const BlogIndex = ({ data }) => {
+  return <IndexPage data={data} />
 }
 
 export default BlogIndex
@@ -47,12 +18,10 @@ export const pageQuery = graphql`
       edges {
         node {
           excerpt
-          fields {
-            slug
-          }
           frontmatter {
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MMMM Do, YYYY")
             title
+            path
           }
         }
       }

@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Header from '../components/Header/Header'
-import Footer from '../components/Footer/Footer'
-import '../stylesheets/styles.scss'
+import Header from 'components/Header/Header'
+import Footer from 'components/Footer/Footer'
+import 'stylesheets/styles.scss'
 
 class Template extends Component {
   render() {
