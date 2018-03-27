@@ -7,7 +7,7 @@
     "gatsby": "^1.9.241",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-google-analytics": "^1.0.24",
-    "gatsby-plugin-offline": "^1.0.15",
+    "gatsby-plugin-google-fonts": "0.0.4",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-resolve-src": "^1.0.0",
     "gatsby-plugin-sass": "^1.0.24",
@@ -21,6 +21,7 @@
     "gatsby-transformer-remark": "^1.7.37",
     "gatsby-transformer-sharp": "^1.6.22",
     "lodash": "^4.17.5",
+    "normalize.css": "^8.0.0",
     "prop-types": "^15.6.1",
     "react-bem-helper": "^1.4.1"
   },
