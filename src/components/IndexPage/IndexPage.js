@@ -11,7 +11,7 @@ const bem = new BEMHelper('index-page')
 
 const IndexPage = ({ data }) => {
   const siteTitle = get(data, 'site.siteMetadata.title')
-  const posts = get(data, 'allMarkdownRemark.edges')
+  const posts = get(data, 'allMarkdownRemark.edges', [])
 
   const flatPosts = posts.map(post => ({
     path: post.node.frontmatter.path,

@@ -2,7 +2,7 @@
 path: '/what-does-rock-climbing-mean-to-me/'
 title: What does rock climbing mean to me
 date: '2017-01-01'
-draft: false
+published: true
 image: './thumbnail.jpg'
 ---
 

@@ -2,7 +2,7 @@
 path: '/exploring-george-town-bouldering-project-rock-penang-malaysia/'
 title: Exploring George Town // Bouldering @Project Rock // Penang // Malaysia
 date: '2018-03-13'
-draft: false
+published: true
 tags: travel, indoor
 image: './05-penang.jpg'
 ---

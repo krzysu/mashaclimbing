@@ -2,7 +2,7 @@
 path: '/railay-beach-tonsai-beach-krabi-thailand/'
 title: Railay & Tonsai Beach - Climbing first 6b! // Krabi // Thailand
 date: '2018-02-26'
-draft: false
+published: true
 tags: travel,outdoor
 image: './03-railay-beach.jpg'
 ---
