@@ -2,7 +2,7 @@
 path: '/no-climbing-animal-welfare-koh-lanta-thailand/'
 title: No climbing // Nature and animal welfare 🐱 // Koh Lanta // Thailand
 date: '2018-03-04'
-draft: false
+published: true
 tags: travel
 ---
 

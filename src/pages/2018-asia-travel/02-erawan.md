@@ -2,7 +2,7 @@
 path: '/erawan-waterfalls-kanchanaburi-thailand/'
 title: Erawan Waterfalls // Kanchanaburi // Thailand
 date: '2018-02-19'
-draft: false
+published: true
 tags: travel
 ---
 

@@ -2,7 +2,7 @@
 path: '/exploring-ho-chi-minh-city-saigon-pushrockclimbing-vietnam/'
 title: Exploring Ho Chi Minh City (Saigon) & Climbing @PUSHROCKCLIMBING // Vietnam
 date: '2018-03-23'
-draft: false
+published: true
 tags: travel, indoor
 ---
 
