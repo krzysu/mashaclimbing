@@ -13,6 +13,7 @@ class BlogPostTemplate extends React.Component {
       date: remark.frontmatter.date,
       title: remark.frontmatter.title,
       body: remark.html,
+      imageSizes: get(remark, 'frontmatter.image.childImageSharp.sizes'),
     }
 
     return (
@@ -40,6 +41,13 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM Do, YYYY")
+        image {
+          childImageSharp {
+            sizes(maxWidth: 800) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
       }
     }
   }

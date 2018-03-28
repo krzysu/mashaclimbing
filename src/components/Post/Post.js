@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import AuthorItem from 'components/AuthorItem/AuthorItem'
+import Img from 'gatsby-image'
 import './Post.scss'
 
 const Post = ({ post }) => {
@@ -8,10 +9,13 @@ const Post = ({ post }) => {
     <div>
       <div className="wrapper post-wrapper">
         <div className="post">
+          {post.imageSizes && (
+            <Img sizes={post.imageSizes} className="post__image" />
+          )}
+          <h1 className="post__title">{post.title}</h1>
           <div className="post__published">
             <small>Published on {post.date}</small>
           </div>
-          <h1>{post.title}</h1>
           <div dangerouslySetInnerHTML={{ __html: post.body }} />
         </div>
       </div>
@@ -33,6 +37,7 @@ Post.propTypes = {
     date: PropTypes.string,
     title: PropTypes.string,
     body: PropTypes.string,
+    imageSizes: PropTypes.object,
   }),
 }
 

@@ -7,22 +7,22 @@
 .post {
   padding: 1.5em 0;
 
-  img {
-    margin: 1.5em auto;
-    display: block;
-    max-width: 100%;
+  &__image {
+    margin-bottom: 2.5em;
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__published {
+    color: #999;
   }
 
   img + em {
     text-align: center;
     display: block;
     margin-top: -1.5em;
-  }
-
-  &__published {
-    text-align: right;
-    color: #999;
-    margin-bottom: 1.5em;
   }
 
   .emojione {
@@ -36,10 +36,6 @@
       text-align: justify;
     }
   }
-}
-
-.post-actions {
-  text-align: center;
 }
 
 .post-author-item {
