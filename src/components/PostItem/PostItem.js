@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import BEMHelper from 'react-bem-helper'
 import Link from 'gatsby-link'
+import Img from 'gatsby-image'
 import './PostItem.scss'
 
 const bem = new BEMHelper('post-item')
@@ -11,6 +12,9 @@ const PostItem = ({ post, headlineTag }) => {
 
   return (
     <div {...bem()}>
+      <Link to={post.path}>
+        <Img sizes={post.imageSizes} {...bem('image')} />
+      </Link>
       <Headline {...bem('headline')}>
         <Link to={post.path} {...bem('headline-link')}>
           {post.title}
@@ -31,6 +35,7 @@ PostItem.propTypes = {
     date: PropTypes.string,
     title: PropTypes.string,
     excerpt: PropTypes.string,
+    imageSizes: PropTypes.object,
   }),
 }
 

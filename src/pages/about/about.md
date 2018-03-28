@@ -3,11 +3,12 @@ path: '/about/'
 title: About me
 date: '2017-01-01'
 draft: false
+image: './thumbnail.jpg'
 ---
 
 ![thumbnail](./thumbnail.jpg)
 
-Hi, my name is Masha. I was born in Moscow, Russia and currently live and work in Berlin, Germany. 
+Hi, my name is Masha. I was born in Moscow, Russia and currently live and work in Berlin, Germany.
 
 I’ve been doing rock climbing for several years. I guess I started in 2014. I would even say that’s when I have discovered this sport for myself. A group of friends took me once to a climbing gym for some top rope. I joined them just for fun, that time I had no idea what exactly rock climbing means and how hanging on the rope can be enjoyable. I rented all equipment, my friends helped me to do my first eight-knot, gave me some short instruction and I started to climb... After a couple of moves I felt immediately that the whole my body was working on the wall, I felt this adrenaline rush when as a beginner I tried to reach the next hold with my sweaty hands. I felt how my heart is beating not from fear but from excitement, I still remember this amazing feeling when I reached my first top with a smile on my face and proudly shouted to my belayer “Tooop!”.
 

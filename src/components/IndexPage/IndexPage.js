@@ -18,6 +18,7 @@ const IndexPage = ({ data }) => {
     date: post.node.frontmatter.date,
     title: post.node.frontmatter.title,
     excerpt: post.node.excerpt,
+    imageSizes: get(post, 'node.frontmatter.image.childImageSharp.sizes', {}),
   }))
 
   return (
