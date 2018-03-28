@@ -1,12 +1,10 @@
 ---
-path: '/about/'
-title: About me
+path: '/what-does-rock-climbing-mean-to-me/'
+title: What does rock climbing mean to me
 date: '2017-01-01'
 draft: false
 image: './thumbnail.jpg'
 ---
-
-![thumbnail](./thumbnail.jpg)
 
 Hi, my name is Masha. I was born in Moscow, Russia and currently live and work in Berlin, Germany.
 
