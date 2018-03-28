@@ -24,23 +24,20 @@
 
 .grid {
   display: flex;
+  flex-flow: wrap;
+  margin: -1em;
 
   @media (max-width: $break-point-m) {
     display: block;
   }
 
   &__item {
-    margin-right: 3em;
+    margin: 1em;
     flex-grow: 1;
     flex-basis: 0;
 
-    &:last-child {
-      margin-right: 0;
-    }
-
     @media (max-width: $break-point-m) {
-      margin-right: 0;
-      margin-bottom: 1.5em;
+      margin-bottom: 2em;
     }
   }
 }

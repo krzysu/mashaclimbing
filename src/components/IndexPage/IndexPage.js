@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import BEMHelper from 'react-bem-helper'
-import PostList from 'components/PostList/PostList'
+import PostItem from 'components/PostItem/PostItem'
 import AuthorItem from 'components/AuthorItem/AuthorItem'
 import './IndexPage.scss'
 
@@ -23,14 +23,20 @@ const IndexPage = ({ data }) => {
 
   return (
     <div {...bem()}>
-      <div className="wrapper">
-        <Helmet title={siteTitle} />
+      <Helmet title={siteTitle} />
+      <div className="wrapper wrapper--wide">
         <div {...bem('post-list')}>
           <div className="page__header">
             <h2 className="page__title">Blog</h2>
           </div>
 
-          <PostList posts={flatPosts} />
+          <div className="grid">
+            {flatPosts.map((post, index) => (
+              <div key={index} {...bem('post-list-item', null, 'grid__item')}>
+                <PostItem post={post} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
       <div {...bem('author-item')}>

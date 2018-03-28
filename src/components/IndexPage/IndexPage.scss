@@ -5,6 +5,21 @@
     padding: 0 0 3em;
   }
 
+  &__post-list-item {
+    flex-basis: 0;
+    max-width: none;
+
+    @media (min-width: 700px) {
+      flex-basis: 40%;
+      max-width: 45%;
+    }
+
+    @media (min-width: 1000px) {
+      flex-basis: 25%;
+      max-width: 30%;
+    }
+  }
+
   &__author-item {
     @include author-item-reversed;
   }
