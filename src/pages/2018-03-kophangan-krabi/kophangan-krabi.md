@@ -6,6 +6,8 @@ draft: false
 tags: travel,outdoor,indoor
 ---
 
+![thumbnail](./thumbnail.jpg)
+
 During our travel through Thailand, as many other backpackers, we did not have the exact plan, but just several pins on the map with places we wished to visit. A party island **Ko Phangan** was one of them. We got there by plane. There is an easy connection from Bangkok to Surat Thani. At arrival, we bought a combined ticket _Surat Thani airport - bus to Donsak ferry - ferry to Ko Phangan_.
 
 After spending 3 days on the island, we decided to move forward. The next destination on our map was **Railay Beach, Krabi**. When it was time to pack our backpacks, we were super **stressed**. Why?.. because of an upcoming journey. We checked many posts and saw so much complaining, confusion and negative experience. People got ripped off by local bus drivers, were dropped off at a wrong place, had to wait 2-3 hours in the middle of nowhere, etc. etc... Well, guess what, we were worried a lot about how we can make our way.
@@ -61,4 +63,4 @@ In the end, I would really like to break the stereotypes about locals trying to 
 
 It took us much time to make a research regarding this connection, find locations of bus stations and put all the dots together. I hope this post will help you to plan your travel better and motivate you to use public transport in Thailand. It gives THE WAY MORE local experience, which you will never see on a bus, full of tourists. I personally just loooove traveling this way and encourage you to be open to it!
 
-Share your experience with Thai public transport in comments or drop me an email. Save travel everyone! :heart:
+Share your experience with Thai public transport in comments or drop me an email. Save travel everyone :airplane:
