@@ -55,9 +55,7 @@ My experience:
 * **Total expenses:** 310 + 170 + 60 + 150 = 690 Baht per person to get from Ko Phangan to Railay Beach.
 * **Time:** we took a ferry at 8 a.m. and were at Railay beach after 8 p.m. Basically the whole day we spent in transport.
 
-In the end, I would really like to break the stereotypes about locals trying to scam tourists! Don't be so distrustful when you take local transport or talk to local people. We have noticed, that Thai people **keep their word**. If they said, that they will drop you off at a certain place or pick you up at a certain time, they will do it. Every time they were punctual, friendly and ready to help.
-
-I know, that scam happens, but probably mostly to the type of tourists, who switch off their brain when they arrive in Asia and rely only on their travel agency. If you are a bit **more open** to the people, culture and informed about the country, you will find Thailand a great place to travel and Thai people the nicest people ever!
+In the end, I would really like to break the stereotypes about locals trying to scam tourists! Don't be so distrustful when you take local transport or talk to local people. We have noticed, that Thai people **keep their word**. If they said, that they will drop you off at a certain place or pick you up at a certain time, they will do it. Every time they were punctual, friendly and ready to help. Be **more open** to the people and their culture and you will find Thailand a great place to travel!
 
 ---
 
