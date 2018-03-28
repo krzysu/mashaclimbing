@@ -6,6 +6,8 @@ draft: false
 tags: travel,outdoor,indoor
 ---
 
+![thumbnail](./thumbnail.jpg)
+
 During our travel through Thailand, as many other backpackers, we did not have the exact plan, but just several pins on the map with places we wished to visit. A party island **Ko Phangan** was one of them. We got there by plane. There is an easy connection from Bangkok to Surat Thani. At arrival, we bought a combined ticket _Surat Thani airport - bus to Donsak ferry - ferry to Ko Phangan_.
 
 After spending 3 days on the island, we decided to move forward. The next destination on our map was **Railay Beach, Krabi**. When it was time to pack our backpacks, we were super **stressed**. Why?.. because of an upcoming journey. We checked many posts and saw so much complaining, confusion and negative experience. People got ripped off by local bus drivers, were dropped off at a wrong place, had to wait 2-3 hours in the middle of nowhere, etc. etc... Well, guess what, we were worried a lot about how we can make our way.
@@ -55,12 +57,10 @@ My experience:
 * **Total expenses:** 310 + 170 + 60 + 150 = 690 Baht per person to get from Ko Phangan to Railay Beach.
 * **Time:** we took a ferry at 8 a.m. and were at Railay beach after 8 p.m. Basically the whole day we spent in transport.
 
-In the end, I would really like to break the stereotypes about locals trying to scam tourists! Don't be so distrustful when you take local transport or talk to local people. We have noticed, that Thai people **keep their word**. If they said, that they will drop you off at a certain place or pick you up at a certain time, they will do it. Every time they were punctual, friendly and ready to help.
-
-I know, that scam happens, but probably mostly to the type of tourists, who switch off their brain when they arrive in Asia and rely only on their travel agency. If you are a bit **more open** to the people, culture and informed about the country, you will find Thailand a great place to travel and Thai people the nicest people ever!
+In the end, I would really like to break the stereotypes about locals trying to scam tourists! Don't be so distrustful when you take local transport or talk to local people. We have noticed, that Thai people **keep their word**. If they said, that they will drop you off at a certain place or pick you up at a certain time, they will do it. Every time they were punctual, friendly and ready to help. Be **more open** to the people and their culture and you will find Thailand a great place to travel!
 
 ---
 
 It took us much time to make a research regarding this connection, find locations of bus stations and put all the dots together. I hope this post will help you to plan your travel better and motivate you to use public transport in Thailand. It gives THE WAY MORE local experience, which you will never see on a bus, full of tourists. I personally just loooove traveling this way and encourage you to be open to it!
 
-Share your experience with Thai public transport in comments or drop me an email. Save travel everyone! :heart:
+Share your experience with Thai public transport in comments or drop me an email. Save travel everyone :airplane:
