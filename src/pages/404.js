@@ -1,10 +1,24 @@
 import React from 'react'
+import Button from 'components/Button/Button'
+import AuthorItem from 'components/AuthorItem/AuthorItem'
 
-const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
-)
+const Page404 = () => {
+  return (
+    <div className="wrapper">
+      <div
+        style={{
+          padding: '9em 0 12em',
+          textAlign: 'center',
+        }}
+      >
+        <h1>404 - page not found</h1>
+        <Button href="/">back to home</Button>
+      </div>
+      <div style={{ paddingBottom: '1.5em' }}>
+        <AuthorItem />
+      </div>
+    </div>
+  )
+}
 
-export default NotFoundPage
+export default Page404
