@@ -4,6 +4,7 @@ title: Erawan Waterfalls // Kanchanaburi // Thailand
 date: '2018-02-19'
 draft: false
 tags: travel
+image: './02-erawan.jpg'
 ---
 
 The next stop of our Asian trip is Erawan Waterfalls. Located in Erawan National Park, this amazing trail consists of 7 beautiful waterfalls. Perfect place to cool down after the heat of Bangkok and swim along with fishes!

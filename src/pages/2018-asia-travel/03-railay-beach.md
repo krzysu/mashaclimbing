@@ -4,6 +4,7 @@ title: Railay & Tonsai Beach - Climbing first 6b! // Krabi // Thailand
 date: '2018-02-26'
 draft: false
 tags: travel,outdoor
+image: './03-railay-beach.jpg'
 ---
 
 Krabi was planned back in Berlin.. And here it is, climbing paradise - the dream came true!

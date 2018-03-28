@@ -4,6 +4,7 @@ title: Urban Playground Climbing // Bangkok // Thailand
 date: '2018-02-12'
 draft: false
 tags: travel,indoor
+image: './01-bangkok.jpg'
 ---
 
 I am so excited to present the first video from our travel to Asia - Bangkok. It's an amazing city with a great spirit and rich culture. We spent there only 4 days, which is definitely not enough to see even the major attractions of the city. But we did our best and enjoyed temples, China town and street food markets. And of course we had a climbing day on our list. We chose a climbing gym "Urban Playground", and we both are very happy with this decision.

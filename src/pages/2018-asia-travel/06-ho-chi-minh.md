@@ -4,6 +4,7 @@ title: Exploring Ho Chi Minh City (Saigon) & Climbing @PUSHROCKCLIMBING // Vietn
 date: '2018-03-23'
 draft: false
 tags: travel, indoor
+image: './06-ho-chi-minh.jpg'
 ---
 
 Our first stop in Vietnam was Ho Chi Minh City. Right from the airport we jumped into the busy life of the city - never stopping traffic, street vendors and constant motorbike horns. That's a unique spirit of Saigon and I personally love it :) I'm happy to share a video of our short staying there.
