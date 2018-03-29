@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import BEMHelper from 'react-bem-helper'
 import Img from 'gatsby-image'
+import { getPostItemFlatData } from 'helpers'
 import PostItem from 'components/PostItem/PostItem'
 import AuthorItem from 'components/AuthorItem/AuthorItem'
 import './IndexPage.scss'
@@ -15,13 +16,7 @@ const IndexPage = ({ data }) => {
   const posts = get(data, 'allMarkdownRemark.edges', [])
   const coverImageSizes = get(data, 'coverImage.sizes')
 
-  const flatPosts = posts.map(post => ({
-    path: post.node.frontmatter.path,
-    date: post.node.frontmatter.date,
-    title: post.node.frontmatter.title,
-    excerpt: post.node.excerpt,
-    imageSizes: get(post, 'node.frontmatter.image.childImageSharp.sizes', {}),
-  }))
+  const flatPosts = posts.map(getPostItemFlatData)
 
   return (
     <div {...bem()}>

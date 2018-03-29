@@ -2,27 +2,21 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
+import { getPostFlatData } from 'helpers'
 import Post from 'components/Post/Post'
 
-class BlogPostTemplate extends React.Component {
-  render() {
-    const remark = this.props.data.markdownRemark
-    const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+const BlogPostTemplate = props => {
+  const siteTitle = get(props, 'data.site.siteMetadata.title')
+  const readNext = get(props, 'pathContext.readNext')
 
-    const post = {
-      date: remark.frontmatter.date,
-      title: remark.frontmatter.title,
-      body: remark.html,
-      imageSizes: get(remark, 'frontmatter.image.childImageSharp.sizes'),
-    }
+  const post = getPostFlatData(props.data.markdownRemark)
 
-    return (
-      <div>
-        <Helmet title={`${post.title} | ${siteTitle}`} />
-        <Post post={post} />
-      </div>
-    )
-  }
+  return (
+    <div>
+      <Helmet title={`${post.title} | ${siteTitle}`} />
+      <Post post={post} readNext={readNext} />
+    </div>
+  )
 }
 
 export default BlogPostTemplate
