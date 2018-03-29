@@ -1,11 +1,29 @@
 const Promise = require('bluebird')
 const path = require('path')
+const get = require('lodash/get')
+
+const getPostItemFlatData = edge => {
+  return {
+    path: edge.node.frontmatter.path,
+    date: edge.node.frontmatter.date,
+    title: edge.node.frontmatter.title,
+    excerpt: edge.node.excerpt,
+    imageSizes: get(edge, 'node.frontmatter.image.childImageSharp.sizes', {}),
+  }
+}
+
+const getReadNextPosts = (posts, currentPost) => {
+  return posts
+    .filter(post => post !== currentPost)
+    .slice(0, 3)
+    .map(getPostItemFlatData)
+}
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
 
   return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/blog-post.js')
+    const blogPost = path.resolve('./src/templates/post.js')
     resolve(
       graphql(
         `
@@ -16,8 +34,22 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             ) {
               edges {
                 node {
+                  excerpt
                   frontmatter {
+                    date(formatString: "MMMM Do, YYYY")
+                    title
                     path
+                    image {
+                      childImageSharp {
+                        sizes(maxWidth: 800) {
+                          base64
+                          aspectRatio
+                          src
+                          srcSet
+                          sizes
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -30,12 +62,17 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           reject(result.errors)
         }
 
+        const posts = result.data.allMarkdownRemark.edges
+
         // Create blog posts pages.
-        result.data.allMarkdownRemark.edges.forEach((post, index) => {
+        posts.forEach((post, index) => {
+          const readNext = getReadNextPosts(posts, post)
           createPage({
             path: post.node.frontmatter.path,
             component: blogPost,
-            context: {},
+            context: {
+              readNext,
+            },
           })
         })
       })

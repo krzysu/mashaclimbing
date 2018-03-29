@@ -2,9 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import AuthorItem from 'components/AuthorItem/AuthorItem'
 import Img from 'gatsby-image'
+import ReadNext from 'components/ReadNext/ReadNext'
 import './Post.scss'
 
-const Post = ({ post }) => {
+const Post = ({ post, readNext }) => {
   return (
     <div>
       <div className="wrapper post-wrapper">
@@ -19,6 +20,8 @@ const Post = ({ post }) => {
           <div dangerouslySetInnerHTML={{ __html: post.body }} />
         </div>
       </div>
+
+      {readNext && <ReadNext readNext={readNext} />}
 
       <div className="wrapper">
         <div className="page__header">
@@ -39,6 +42,7 @@ Post.propTypes = {
     body: PropTypes.string,
     imageSizes: PropTypes.object,
   }),
+  readNext: PropTypes.array,
 }
 
 export default Post

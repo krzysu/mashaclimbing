@@ -12,9 +12,11 @@ const PostItem = ({ post, headlineTag }) => {
 
   return (
     <div {...bem()}>
-      <Link to={post.path}>
-        <Img sizes={post.imageSizes} {...bem('image')} />
-      </Link>
+      {post.imageSizes && (
+        <Link to={post.path}>
+          <Img sizes={post.imageSizes} {...bem('image')} />
+        </Link>
+      )}
       <Headline {...bem('headline')}>
         <Link to={post.path} {...bem('headline-link')}>
           {post.title}

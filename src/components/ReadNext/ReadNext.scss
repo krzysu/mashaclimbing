@@ -1,0 +1,10 @@
+@import '~stylesheets/vars';
+
+.read-next {
+  margin-bottom: 2.5em;
+
+  &__item {
+    flex-basis: 0;
+    margin-bottom: 2em;
+  }
+}
