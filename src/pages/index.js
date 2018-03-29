@@ -14,6 +14,11 @@ export const pageQuery = graphql`
         title
       }
     }
+    coverImage: imageSharp(id: { regex: "/cover.jpg/" }) {
+      sizes(maxWidth: 1600, maxHeight: 400) {
+        ...GatsbyImageSharpSizes
+      }
+    }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { published: { eq: true } } }
