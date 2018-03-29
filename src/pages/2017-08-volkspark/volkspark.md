@@ -4,6 +4,7 @@ title: Sunday in Volkspark Friedrichshain
 date: '2017-08-14'
 published: true
 tags: outdoor
+image: './thumbnail.jpg'
 ---
 
 Usually on Sundays we go to a climbing gym. This time it was different - I felt sick. Nothing serious, but I was coughing the whole weekend and decided that it's not the best idea to run to a gym. Well, the day supposed to be quite lazy and relaxed..
