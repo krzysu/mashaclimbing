@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import get from 'lodash/get'
+import startCase from 'lodash/startCase'
 import { getPostItemFlatData } from 'helpers'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
@@ -19,7 +20,7 @@ const TagsTemplate = ({ pathContext, data }) => {
 
       <div className="wrapper wrapper--wide">
         <div className="page__header">
-          <h2 className="page__title">{pathContext.tag.toUpperCase()}</h2>
+          <h2 className="page__title">{startCase(pathContext.tag)}</h2>
         </div>
 
         <PostList flatPosts={flatPosts} />
