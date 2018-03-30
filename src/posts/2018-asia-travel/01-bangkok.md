@@ -3,7 +3,7 @@ path: '/urban-playground-climbing-bangkok-thailand/'
 title: Urban Playground Climbing // Bangkok // Thailand
 date: '2018-02-12'
 published: true
-tags: travel,indoor
+tags: ['travel', 'indoor']
 image: './01-bangkok.jpg'
 ---
 

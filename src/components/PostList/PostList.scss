@@ -1,0 +1,18 @@
+.post-list {
+  padding: 0 0 3em;
+
+  &__item {
+    flex-basis: 0;
+    max-width: none;
+
+    @media (min-width: 700px) {
+      flex-basis: 40%;
+      max-width: 45%;
+    }
+
+    @media (min-width: 1000px) {
+      flex-basis: 25%;
+      max-width: 30%;
+    }
+  }
+}

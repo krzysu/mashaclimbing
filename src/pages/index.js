@@ -8,7 +8,7 @@ const BlogIndex = ({ data }) => {
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query IndexPage {
     site {
       siteMetadata {
         title
