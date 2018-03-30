@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import get from 'lodash/get'
-import startCase from 'lodash/startCase'
-import { getPostItemFlatData } from 'helpers'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
+import get from 'lodash/get'
+import { getPostItemFlatData } from 'helpers'
+import Img from 'gatsby-image'
+import TagNavigation from 'components/TagNavigation/TagNavigation'
 import PostList from 'components/PostList/PostList'
 import AuthorItem from 'components/AuthorItem/AuthorItem'
 import './tags.scss'
@@ -12,15 +12,20 @@ import './tags.scss'
 const TagsTemplate = ({ pathContext, data }) => {
   const siteTitle = get(data, 'site.siteMetadata.title')
   const posts = get(data, 'allMarkdownRemark.edges', [])
+  const coverImageSizes = get(data, 'coverImage.sizes')
+
   const flatPosts = posts.map(getPostItemFlatData)
 
   return (
     <div>
       <Helmet title={siteTitle} />
-
+      {coverImageSizes && <Img sizes={coverImageSizes} />}
       <div className="wrapper wrapper--wide">
         <div className="page__header">
-          <h2 className="page__title">{startCase(pathContext.tag)}</h2>
+          <TagNavigation
+            tags={data.allTags.group}
+            currentTag={pathContext.tag}
+          />
         </div>
 
         <PostList flatPosts={flatPosts} />
@@ -50,6 +55,11 @@ export const pageQuery = graphql`
         title
       }
     }
+    coverImage: imageSharp(id: { regex: "/cover.jpg/" }) {
+      sizes(maxWidth: 1600, maxHeight: 400) {
+        ...GatsbyImageSharpSizes
+      }
+    }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { tags: { in: [$tag] }, published: { eq: true } } }
@@ -70,6 +80,13 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+    }
+    allTags: allMarkdownRemark(
+      filter: { frontmatter: { published: { eq: true } } }
+    ) {
+      group(field: frontmatter___tags) {
+        fieldValue
       }
     }
   }
