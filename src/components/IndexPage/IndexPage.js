@@ -5,7 +5,7 @@ import get from 'lodash/get'
 import BEMHelper from 'react-bem-helper'
 import Img from 'gatsby-image'
 import { getPostItemFlatData } from 'helpers'
-import PostItem from 'components/PostItem/PostItem'
+import PostList from 'components/PostList/PostList'
 import AuthorItem from 'components/AuthorItem/AuthorItem'
 import './IndexPage.scss'
 
@@ -25,19 +25,11 @@ const IndexPage = ({ data }) => {
         <Img sizes={coverImageSizes} {...bem('cover-image')} />
       )}
       <div className="wrapper wrapper--wide">
-        <div {...bem('post-list')}>
-          <div className="page__header">
-            <h2 className="page__title">Blog</h2>
-          </div>
-
-          <div className="grid">
-            {flatPosts.map((post, index) => (
-              <div key={index} {...bem('post-list-item', null, 'grid__item')}>
-                <PostItem post={post} />
-              </div>
-            ))}
-          </div>
+        <div className="page__header">
+          <h2 className="page__title">Blog</h2>
         </div>
+
+        <PostList flatPosts={flatPosts} />
       </div>
       <div {...bem('author-item')}>
         <div className="wrapper">

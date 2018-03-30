@@ -1,29 +1,12 @@
 const Promise = require('bluebird')
 const path = require('path')
 const get = require('lodash/get')
-
-const getPostItemFlatData = edge => {
-  return {
-    path: edge.node.frontmatter.path,
-    date: edge.node.frontmatter.date,
-    title: edge.node.frontmatter.title,
-    excerpt: edge.node.excerpt,
-    imageSizes: get(edge, 'node.frontmatter.image.childImageSharp.sizes', {}),
-  }
-}
-
-const getReadNextPosts = (posts, currentPost) => {
-  return posts
-    .filter(post => post !== currentPost)
-    .slice(0, 3)
-    .map(getPostItemFlatData)
-}
+const kebabCase = require('lodash/kebabCase')
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
 
   return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/post.js')
     resolve(
       graphql(
         `
@@ -36,9 +19,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 node {
                   excerpt
                   frontmatter {
-                    date(formatString: "MMMM Do, YYYY")
-                    title
                     path
+                    title
+                    date(formatString: "MMMM Do, YYYY")
+                    tags
                     image {
                       childImageSharp {
                         sizes(maxWidth: 800) {
@@ -64,18 +48,64 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         const posts = result.data.allMarkdownRemark.edges
 
-        // Create blog posts pages.
-        posts.forEach((post, index) => {
-          const readNext = getReadNextPosts(posts, post)
-          createPage({
-            path: post.node.frontmatter.path,
-            component: blogPost,
-            context: {
-              readNext,
-            },
-          })
-        })
+        createPostPages(createPage, posts)
+        createTagPages(createPage, posts)
       })
     )
   })
+}
+
+const createPostPages = (createPage, posts) => {
+  const postTemplate = path.resolve('./src/templates/post.js')
+
+  posts.forEach((post, index) => {
+    const readNext = getReadNextPosts(posts, post)
+    createPage({
+      path: post.node.frontmatter.path,
+      component: postTemplate,
+      context: {
+        readNext,
+      },
+    })
+  })
+}
+
+const createTagPages = (createPage, posts) => {
+  const tagTemplate = path.resolve('./src/templates/tags.js')
+
+  const tags = posts
+    .reduce((tags, edge) => {
+      if (get(edge, 'node.frontmatter.tags')) {
+        return tags.concat(edge.node.frontmatter.tags)
+      }
+      return tags
+    }, [])
+    .filter((tag, index, tags) => tags.indexOf(tag) === index)
+
+  tags.forEach(tag => {
+    createPage({
+      path: `/${kebabCase(tag)}/`,
+      component: tagTemplate,
+      context: {
+        tag,
+      },
+    })
+  })
+}
+
+const getReadNextPosts = (posts, currentPost) => {
+  return posts
+    .filter(post => post !== currentPost)
+    .slice(0, 3)
+    .map(getPostItemFlatData)
+}
+
+const getPostItemFlatData = edge => {
+  return {
+    path: edge.node.frontmatter.path,
+    date: edge.node.frontmatter.date,
+    title: edge.node.frontmatter.title,
+    excerpt: edge.node.excerpt,
+    imageSizes: get(edge, 'node.frontmatter.image.childImageSharp.sizes', {}),
+  }
 }

@@ -1,11 +1,12 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import { getPostFlatData } from 'helpers'
 import Post from 'components/Post/Post'
 
-const BlogPostTemplate = props => {
+const PostTemplate = props => {
   const siteTitle = get(props, 'data.site.siteMetadata.title')
   const readNext = get(props, 'pathContext.readNext')
 
@@ -19,14 +20,20 @@ const BlogPostTemplate = props => {
   )
 }
 
-export default BlogPostTemplate
+PostTemplate.propTypes = {
+  pathContext: PropTypes.shape({
+    readNext: PropTypes.array.isRequired,
+  }),
+  data: PropTypes.object,
+}
+
+export default PostTemplate
 
 export const pageQuery = graphql`
-  query BlogPost($path: String!) {
+  query PostPage($path: String!) {
     site {
       siteMetadata {
         title
-        author
       }
     }
     markdownRemark(frontmatter: { path: { eq: $path } }) {

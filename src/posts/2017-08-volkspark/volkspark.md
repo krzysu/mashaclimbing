@@ -3,7 +3,7 @@ path: '/sunday-in-volkspark-friedrichshain/'
 title: Sunday in Volkspark Friedrichshain
 date: '2017-08-14'
 published: true
-tags: outdoor
+tags: ['outdoor']
 image: './thumbnail.jpg'
 ---
 

@@ -3,7 +3,7 @@ path: '/ko-phangan-to-railay-beach/'
 title: Busting The Myth - Ko Phangan to Railay Beach (Krabi)
 date: '2018-03-26'
 published: true
-tags: travel
+tags: ['travel']
 image: './thumbnail.jpg'
 ---
 
