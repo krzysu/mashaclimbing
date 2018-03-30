@@ -62,4 +62,4 @@ In the end, I would really like to break the stereotypes about locals trying to 
 
 It took us much time to make a research regarding this connection, find locations of bus stations and put all the dots together. I hope this post will help you to plan your travel better and motivate you to use public transport in Thailand. It gives THE WAY MORE local experience, which you will never see on a bus, full of tourists. I personally just loooove traveling this way and encourage you to be open to it!
 
-Share your experience with Thai public transport in comments or drop me an email. Save travel everyone :airplane:
+Don't hesitate to drop me an email if you'd like to share your experience with Thai public transport. Save travel everyone :airplane:
