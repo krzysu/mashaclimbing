@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import BEMHelper from 'react-bem-helper'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
-import BEMHelper from 'react-bem-helper'
-import Img from 'gatsby-image'
 import { getPostItemFlatData } from 'helpers'
+import Img from 'gatsby-image'
+import TagNavigation from 'components/TagNavigation/TagNavigation'
 import PostList from 'components/PostList/PostList'
 import AuthorItem from 'components/AuthorItem/AuthorItem'
 import './index.scss'
@@ -21,12 +22,10 @@ const IndexPage = ({ data }) => {
   return (
     <div {...bem()}>
       <Helmet title={siteTitle} />
-      {coverImageSizes && (
-        <Img sizes={coverImageSizes} {...bem('cover-image')} />
-      )}
+      {coverImageSizes && <Img sizes={coverImageSizes} />}
       <div className="wrapper wrapper--wide">
         <div className="page__header">
-          <h2 className="page__title">Blog</h2>
+          <TagNavigation tags={data.allMarkdownRemark.tags} />
         </div>
 
         <PostList flatPosts={flatPosts} />
@@ -78,6 +77,9 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+      tags: group(field: frontmatter___tags) {
+        fieldValue
       }
     }
   }
