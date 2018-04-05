@@ -8,6 +8,7 @@ import Img from 'gatsby-image'
 import TagNavigation from 'components/TagNavigation/TagNavigation'
 import PostList from 'components/PostList/PostList'
 import AuthorItem from 'components/AuthorItem/AuthorItem'
+import Logo from 'components/Logo/Logo'
 import './index.scss'
 
 const bem = new BEMHelper('index-page')
@@ -22,7 +23,16 @@ const IndexPage = ({ data }) => {
   return (
     <div {...bem()}>
       <Helmet title={siteTitle} />
-      {coverImageSizes && <Img sizes={coverImageSizes} />}
+
+      {coverImageSizes && (
+        <div>
+          <div className="wrapper wrapper--wide index-page__header">
+            <Logo />
+          </div>
+          <Img sizes={coverImageSizes} />
+        </div>
+      )}
+
       <div className="wrapper wrapper--wide">
         <div className="page__header">
           <TagNavigation tags={data.allMarkdownRemark.tags} />

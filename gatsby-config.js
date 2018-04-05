@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Masha Climbing Blog',
-    author: 'Masha',
+    title: 'Masha Climbing',
     description: 'Best climbing and travel videos',
     siteUrl: 'https://mashaclimbing.com',
   },
@@ -59,7 +58,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: ['Lato', 'Merriweather:400,900'],
+        fonts: ['Lato', 'Merriweather:400,900', 'Yellowtail'],
       },
     },
     `gatsby-plugin-react-helmet`,
