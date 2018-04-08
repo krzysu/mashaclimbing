@@ -7,8 +7,6 @@ tags: ['indoor']
 image: './thumbnail.jpg'
 ---
 
-## Intro and Location
-
 This is my first attempt at writing a climbing gym review. Berta Block is a symbolic place to me - I have started bouldering at that gym. I love this place because of its style and varieties of bouldering problems.
 
 Together with a huge amount of boulders, Berta Block offers technical courses for kids and adults, birthday parties (for kids 😊) and yoga classes. See details on the official [Berta Block website](http://www.bertablock.de/).
