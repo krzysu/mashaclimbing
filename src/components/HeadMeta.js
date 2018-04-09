@@ -9,7 +9,7 @@ const HeadMeta = props => {
   const siteUrl = props.site.siteMetadata.siteUrl
   const excerpt = get(props, 'page.excerpt')
   const title = get(props, 'page.frontmatter.title')
-  const path = props.path || get(props, 'page.frontmatter.path', '')
+  const path = props.pathname || get(props, 'page.frontmatter.path', '')
   const imageUrl =
     props.imageUrl || get(props, 'page.frontmatter.image.publicURL', '')
 
@@ -44,7 +44,7 @@ const HeadMeta = props => {
 HeadMeta.propTypes = {
   site: PropTypes.object.isRequired,
   page: PropTypes.object,
-  path: PropTypes.string,
+  pathname: PropTypes.string,
   imageUrl: PropTypes.string,
 }
 

@@ -1,16 +1,57 @@
 @import '~stylesheets/vars';
-@import '~stylesheets/mixins';
 
 .header {
-  @include reverse-bg;
-  line-height: 3em;
+  background: $color-reverse;
+  padding: 1em 0;
 
   &__inner {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 4px;
+
+    @media (min-width: 400px) {
+      font-size: 6px;
+    }
+
+    @media (min-width: 700px) {
+      font-size: 10px;
+    }
+
+    @media (min-width: 1000px) {
+      font-size: 12px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  &__list-item {
+    display: block;
+    margin-left: 1em;
   }
 
   &__link {
-    @include link-alt;
+    text-decoration: none;
+    font-size: 1.1111111111111112em;
+    line-height: 1.35em;
+    font-weight: bold;
+    padding: 0.3em;
+
+    &:hover {
+      color: $color-extra;
+    }
+
+    &--active {
+      background-color: $color-reverse-alt;
+    }
   }
 }

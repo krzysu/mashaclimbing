@@ -1,16 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import get from 'lodash/get'
-import kebabCase from 'lodash/kebabCase'
+import startCase from 'lodash/startCase'
 import { getPostItemFlatData } from 'helpers'
 import Img from 'gatsby-image'
 import HeadMeta from 'components/HeadMeta'
-import TagNavigation from 'components/TagNavigation/TagNavigation'
 import PostList from 'components/PostList/PostList'
 import AuthorItem from 'components/AuthorItem/AuthorItem'
 import './tags.scss'
 
-const TagsTemplate = ({ pathContext, data }) => {
+const TagsTemplate = ({ pathContext, data, location }) => {
   const posts = get(data, 'allMarkdownRemark.edges', [])
   const coverImageSizes = get(data, 'coverImage.sizes')
 
@@ -21,17 +20,13 @@ const TagsTemplate = ({ pathContext, data }) => {
       <HeadMeta
         site={data.headMetaSite}
         imageUrl={data.headMetaImage.sizes.src}
-        path={`/${kebabCase(pathContext.tag)}/`}
+        pathname={location.pathname}
       />
       {coverImageSizes && <Img sizes={coverImageSizes} />}
       <div className="wrapper wrapper--wide">
         <div className="page__header">
-          <TagNavigation
-            tags={data.allTags.group}
-            currentTag={pathContext.tag}
-          />
+          <h2 className="page__title">{startCase(pathContext.tag)}</h2>
         </div>
-
         <PostList flatPosts={flatPosts} />
       </div>
       <div className="tags-page__author-item">
@@ -87,13 +82,6 @@ export const pageQuery = graphql`
             }
           }
         }
-      }
-    }
-    allTags: allMarkdownRemark(
-      filter: { frontmatter: { published: { eq: true } } }
-    ) {
-      group(field: frontmatter___tags) {
-        fieldValue
       }
     }
   }

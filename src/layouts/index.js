@@ -5,19 +5,31 @@ import Footer from 'components/Footer/Footer'
 import 'normalize.css/normalize.css'
 import 'stylesheets/styles.scss'
 
-const Template = ({ location, children }) => {
+const Layout = ({ location, children, data }) => {
   return (
     <div>
-      <Header location={location} />
+      <Header pathname={location.pathname} tags={data.allTags.group} />
       <div className="body">{children()}</div>
       <Footer />
     </div>
   )
 }
 
-Template.propTypes = {
+Layout.propTypes = {
   children: PropTypes.func,
   location: PropTypes.object,
 }
 
-export default Template
+export default Layout
+
+export const pageQuery = graphql`
+  query LayoutQuery {
+    allTags: allMarkdownRemark(
+      filter: { frontmatter: { published: { eq: true } } }
+    ) {
+      group(field: frontmatter___tags) {
+        fieldValue
+      }
+    }
+  }
+`

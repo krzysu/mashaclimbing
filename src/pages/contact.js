@@ -1,10 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import AuthorItem from 'components/AuthorItem/AuthorItem'
+import get from 'lodash/get'
 import { getEmail } from 'helpers'
+import Img from 'gatsby-image'
+import AuthorItem from 'components/AuthorItem/AuthorItem'
 import './contact.scss'
 
-const ContactPage = () => {
+const ContactPage = ({ data }) => {
+  const coverImageSizes = get(data, 'coverImage.sizes')
+
   const links = [
     {
       label: 'Write me a message to',
@@ -25,9 +29,11 @@ const ContactPage = () => {
 
   return (
     <div className="contact-page">
-      <div className="wrapper">
-        <div className="contact-page__content">
-          <h1>Contact</h1>
+      {coverImageSizes && <Img sizes={coverImageSizes} />}
+
+      <div className="wrapper contact-page__content">
+        <div className="page__header">
+          <h2 className="page__title">Contact</h2>
           <ul>
             {links.map((link, index) => {
               return (
@@ -58,3 +64,13 @@ const ContactPage = () => {
 }
 
 export default ContactPage
+
+export const pageQuery = graphql`
+  query ContactPage {
+    coverImage: imageSharp(id: { regex: "/cover.jpg/" }) {
+      sizes(maxWidth: 1600, maxHeight: 400) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+  }
+`
