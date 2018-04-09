@@ -1,9 +1,12 @@
-# gatsby-starter-blog
-Gatsby starter for creating a blog
+# mashaclimbing website
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+This website is open sourced for learning and recruitment purposes. Do not use for profit.
 
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
+## Build on top of:
 
-## Running in development
-`gatsby develop`
+* react.js
+* gatsby.js
+
+---
+
+created by Kris Urbas [@krzysu](https://twitter.com/krzysu), all rights reserved
