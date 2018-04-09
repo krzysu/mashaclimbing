@@ -10,12 +10,9 @@ const HeadMeta = props => {
   const excerpt = get(props, 'page.excerpt')
   const title = get(props, 'page.frontmatter.title')
   const path = props.pathname || get(props, 'page.frontmatter.path', '')
-  const imageUrl =
-    props.imageUrl || get(props, 'page.frontmatter.image.publicURL', '')
+  const imageUrl = props.imageUrl || get(props, 'page.frontmatter.image.publicURL', '')
 
-  const metaTitle = title
-    ? `${title} | ${blogTitle}`
-    : `${blogTitle} | ${blogDescription}`
+  const metaTitle = title ? `${title} | ${blogTitle}` : `${blogTitle} | ${blogDescription}`
   const metaDescription = excerpt || blogDescription
   const fullMetaImageUrl = siteUrl + imageUrl
   const fullPath = siteUrl + path
@@ -38,23 +35,9 @@ const HeadMeta = props => {
       <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:image" content={fullMetaImageUrl} />
 
-      <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="/apple-touch-icon.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="/favicon-32x32.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="/favicon-16x16.png"
-      />
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       <link rel="manifest" href="/site.webmanifest" />
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
       <meta name="msapplication-TileColor" content="#da532c" />

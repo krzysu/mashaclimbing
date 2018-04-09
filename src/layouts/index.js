@@ -38,9 +38,7 @@ export const pageQuery = graphql`
         src
       }
     }
-    allTags: allMarkdownRemark(
-      filter: { frontmatter: { published: { eq: true } } }
-    ) {
+    allTags: allMarkdownRemark(filter: { frontmatter: { published: { eq: true } } }) {
       group(field: frontmatter___tags) {
         fieldValue
       }

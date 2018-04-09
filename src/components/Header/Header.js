@@ -31,10 +31,7 @@ const Header = ({ pathname, tags }) => {
           <ul {...bem('list')}>
             {links.map((link, index) => (
               <li key={index} {...bem('list-item')}>
-                <Link
-                  to={link.href}
-                  {...bem('link', { active: link.isActive })}
-                >
+                <Link to={link.href} {...bem('link', { active: link.isActive })}>
                   {link.label}
                 </Link>
               </li>

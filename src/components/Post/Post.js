@@ -10,9 +10,7 @@ const Post = ({ post, readNext }) => {
     <div>
       <div className="wrapper post-wrapper">
         <div className="post">
-          {post.imageSizes && (
-            <Img sizes={post.imageSizes} className="post__image" />
-          )}
+          {post.imageSizes && <Img sizes={post.imageSizes} className="post__image" />}
           <h1 className="post__title">{post.title}</h1>
           <div className="post__published">
             <small>Published on {post.date}</small>
