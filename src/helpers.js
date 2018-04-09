@@ -18,3 +18,18 @@ export const getPostItemFlatData = edge => {
     imageSizes: get(edge, 'node.frontmatter.image.childImageSharp.sizes', {}),
   }
 }
+
+const isServer = () => {
+  return !(typeof window !== 'undefined' && window.document)
+}
+
+export const getEmail = () => {
+  if (isServer()) {
+    return 'spam-protected@email.com'
+  }
+
+  return 'moc.liamg@hsutamiram'
+    .split('')
+    .reverse()
+    .join('')
+}
