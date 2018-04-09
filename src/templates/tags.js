@@ -4,7 +4,6 @@ import get from 'lodash/get'
 import startCase from 'lodash/startCase'
 import { getPostItemFlatData } from 'helpers'
 import Img from 'gatsby-image'
-import HeadMeta from 'components/HeadMeta'
 import PostList from 'components/PostList/PostList'
 import AuthorItem from 'components/AuthorItem/AuthorItem'
 import './tags.scss'
@@ -17,11 +16,6 @@ const TagsTemplate = ({ pathContext, data, location }) => {
 
   return (
     <div>
-      <HeadMeta
-        site={data.headMetaSite}
-        imageUrl={data.headMetaImage.sizes.src}
-        pathname={location.pathname}
-      />
       {coverImageSizes && <Img sizes={coverImageSizes} />}
       <div className="wrapper wrapper--wide">
         <div className="page__header">
@@ -49,14 +43,6 @@ export default TagsTemplate
 
 export const pageQuery = graphql`
   query TagPage($tag: String) {
-    headMetaSite: site {
-      ...HeadMetaSiteFragment
-    }
-    headMetaImage: imageSharp(id: { regex: "/profile.jpg/" }) {
-      sizes(maxWidth: 700, maxHeight: 700) {
-        src
-      }
-    }
     coverImage: imageSharp(id: { regex: "/cover.jpg/" }) {
       sizes(maxWidth: 1600, maxHeight: 400) {
         ...GatsbyImageSharpSizes

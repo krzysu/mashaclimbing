@@ -4,7 +4,6 @@ import BEMHelper from 'react-bem-helper'
 import get from 'lodash/get'
 import { getPostItemFlatData } from 'helpers'
 import Img from 'gatsby-image'
-import HeadMeta from 'components/HeadMeta'
 import PostList from 'components/PostList/PostList'
 import AuthorItem from 'components/AuthorItem/AuthorItem'
 import './index.scss'
@@ -19,11 +18,6 @@ const IndexPage = ({ data }) => {
 
   return (
     <div {...bem()}>
-      <HeadMeta
-        site={data.headMetaSite}
-        imageUrl={data.headMetaImage.sizes.src}
-      />
-
       {coverImageSizes && <Img sizes={coverImageSizes} />}
 
       <div className="wrapper wrapper--wide">
@@ -51,14 +45,6 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query IndexPage {
-    headMetaSite: site {
-      ...HeadMetaSiteFragment
-    }
-    headMetaImage: imageSharp(id: { regex: "/profile.jpg/" }) {
-      sizes(maxWidth: 700, maxHeight: 700) {
-        src
-      }
-    }
     coverImage: imageSharp(id: { regex: "/cover.jpg/" }) {
       sizes(maxWidth: 1600, maxHeight: 400) {
         ...GatsbyImageSharpSizes
