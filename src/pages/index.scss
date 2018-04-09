@@ -1,33 +1,6 @@
 @import '~stylesheets/mixins';
 
 .index-page {
-  .logo {
-    position: absolute;
-    top: 1em;
-    z-index: 1;
-    font-size: 4px;
-
-    @media (min-width: 400px) {
-      font-size: 6px;
-    }
-
-    @media (min-width: 700px) {
-      font-size: 10px;
-    }
-
-    @media (min-width: 1000px) {
-      font-size: 12px;
-    }
-
-    @media (min-width: 1300px) {
-      font-size: 16px;
-    }
-  }
-
-  &__header {
-    position: relative;
-  }
-
   &__author-item {
     @include author-item-reversed;
   }

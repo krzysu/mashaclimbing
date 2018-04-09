@@ -5,10 +5,8 @@ import get from 'lodash/get'
 import { getPostItemFlatData } from 'helpers'
 import Img from 'gatsby-image'
 import HeadMeta from 'components/HeadMeta'
-import TagNavigation from 'components/TagNavigation/TagNavigation'
 import PostList from 'components/PostList/PostList'
 import AuthorItem from 'components/AuthorItem/AuthorItem'
-import Logo from 'components/Logo/Logo'
 import './index.scss'
 
 const bem = new BEMHelper('index-page')
@@ -26,22 +24,16 @@ const IndexPage = ({ data }) => {
         imageUrl={data.headMetaImage.sizes.src}
       />
 
-      {coverImageSizes && (
-        <div>
-          <div className="wrapper wrapper--wide index-page__header">
-            <Logo />
-          </div>
-          <Img sizes={coverImageSizes} />
-        </div>
-      )}
+      {coverImageSizes && <Img sizes={coverImageSizes} />}
 
       <div className="wrapper wrapper--wide">
         <div className="page__header">
-          <TagNavigation tags={data.allMarkdownRemark.tags} />
+          <h2 className="page__title">Blog</h2>
         </div>
 
         <PostList flatPosts={flatPosts} />
       </div>
+
       <div {...bem('author-item')}>
         <div className="wrapper">
           <AuthorItem />
@@ -92,9 +84,6 @@ export const pageQuery = graphql`
             }
           }
         }
-      }
-      tags: group(field: frontmatter___tags) {
-        fieldValue
       }
     }
   }

@@ -1,4 +1,6 @@
 import get from 'lodash/get'
+import kebabCase from 'lodash/kebabCase'
+import startCase from 'lodash/startCase'
 
 export const getPostFlatData = remark => {
   return {
@@ -32,4 +34,15 @@ export const getEmail = () => {
     .split('')
     .reverse()
     .join('')
+}
+
+export const getTagLinks = (tags, pathname) => {
+  return tags.map(tag => {
+    const href = `/${kebabCase(tag.fieldValue)}/`
+    return {
+      label: startCase(tag.fieldValue),
+      href,
+      isActive: pathname === href,
+    }
+  })
 }
