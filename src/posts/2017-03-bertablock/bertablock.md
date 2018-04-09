@@ -103,4 +103,10 @@ The gym is opened 7 days a week during the following hours:
 
 Adult daily price is **10 eur**. It’s the highest price for a bouldering gym in Berlin. For students it will be 8 eur.
 
-Berta Block also offers early bird option - Mo.-Fr. till 1 pm with the price 6 eur and they also have a variety of abonnements - 10, 20, 50 entries, half- or one-year membership cards. For more details please check the official website: www.bertablock.de
+Berta Block also offers early bird option - Mo.-Fr. till 1 pm with the price 6 eur and they also have a variety of abonnements - 10, 20, 50 entries, half- or one-year membership cards. For more details please check the [official website](www.bertablock.de)
+
+***
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WB0d1PowQXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+Check out my YouTube channel for more climbing videos!
