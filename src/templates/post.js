@@ -1,20 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import { getPostFlatData } from 'helpers'
+import HeadMeta from 'components/HeadMeta'
 import Post from 'components/Post/Post'
 
 const PostTemplate = props => {
-  const siteTitle = get(props, 'data.site.siteMetadata.title')
   const readNext = get(props, 'pathContext.readNext')
-
   const post = getPostFlatData(props.data.markdownRemark)
 
   return (
     <div>
-      <Helmet title={`${post.title} | ${siteTitle}`} />
+      <HeadMeta site={props.data.headMetaSite} page={props.data.headMetaPage} />
       <Post post={post} readNext={readNext} />
     </div>
   )
@@ -31,11 +29,6 @@ export default PostTemplate
 
 export const pageQuery = graphql`
   query PostPage($path: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       id
       html
@@ -50,6 +43,13 @@ export const pageQuery = graphql`
           }
         }
       }
+    }
+
+    headMetaSite: site {
+      ...HeadMetaSiteFragment
+    }
+    headMetaPage: markdownRemark(frontmatter: { path: { eq: $path } }) {
+      ...HeadMetaMarkdownFragment
     }
   }
 `

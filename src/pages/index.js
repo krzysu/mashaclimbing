@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import BEMHelper from 'react-bem-helper'
-import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import { getPostItemFlatData } from 'helpers'
 import Img from 'gatsby-image'
+import HeadMeta from 'components/HeadMeta'
 import TagNavigation from 'components/TagNavigation/TagNavigation'
 import PostList from 'components/PostList/PostList'
 import AuthorItem from 'components/AuthorItem/AuthorItem'
@@ -14,7 +14,6 @@ import './index.scss'
 const bem = new BEMHelper('index-page')
 
 const IndexPage = ({ data }) => {
-  const siteTitle = get(data, 'site.siteMetadata.title')
   const posts = get(data, 'allMarkdownRemark.edges', [])
   const coverImageSizes = get(data, 'coverImage.sizes')
 
@@ -22,7 +21,10 @@ const IndexPage = ({ data }) => {
 
   return (
     <div {...bem()}>
-      <Helmet title={siteTitle} />
+      <HeadMeta
+        site={data.headMetaSite}
+        imageUrl={data.headMetaImage.sizes.src}
+      />
 
       {coverImageSizes && (
         <div>
@@ -57,9 +59,12 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query IndexPage {
-    site {
-      siteMetadata {
-        title
+    headMetaSite: site {
+      ...HeadMetaSiteFragment
+    }
+    headMetaImage: imageSharp(id: { regex: "/profile.jpg/" }) {
+      sizes(maxWidth: 700, maxHeight: 700) {
+        src
       }
     }
     coverImage: imageSharp(id: { regex: "/cover.jpg/" }) {

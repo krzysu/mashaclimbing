@@ -1,16 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
 import get from 'lodash/get'
+import kebabCase from 'lodash/kebabCase'
 import { getPostItemFlatData } from 'helpers'
 import Img from 'gatsby-image'
+import HeadMeta from 'components/HeadMeta'
 import TagNavigation from 'components/TagNavigation/TagNavigation'
 import PostList from 'components/PostList/PostList'
 import AuthorItem from 'components/AuthorItem/AuthorItem'
 import './tags.scss'
 
 const TagsTemplate = ({ pathContext, data }) => {
-  const siteTitle = get(data, 'site.siteMetadata.title')
   const posts = get(data, 'allMarkdownRemark.edges', [])
   const coverImageSizes = get(data, 'coverImage.sizes')
 
@@ -18,7 +18,11 @@ const TagsTemplate = ({ pathContext, data }) => {
 
   return (
     <div>
-      <Helmet title={siteTitle} />
+      <HeadMeta
+        site={data.headMetaSite}
+        imageUrl={data.headMetaImage.sizes.src}
+        path={`/${kebabCase(pathContext.tag)}/`}
+      />
       {coverImageSizes && <Img sizes={coverImageSizes} />}
       <div className="wrapper wrapper--wide">
         <div className="page__header">
@@ -50,9 +54,12 @@ export default TagsTemplate
 
 export const pageQuery = graphql`
   query TagPage($tag: String) {
-    site {
-      siteMetadata {
-        title
+    headMetaSite: site {
+      ...HeadMetaSiteFragment
+    }
+    headMetaImage: imageSharp(id: { regex: "/profile.jpg/" }) {
+      sizes(maxWidth: 700, maxHeight: 700) {
+        src
       }
     }
     coverImage: imageSharp(id: { regex: "/cover.jpg/" }) {
