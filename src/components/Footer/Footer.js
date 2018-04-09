@@ -37,12 +37,7 @@ const Footer = () => {
             {linksLeft.map((link, index) => {
               return (
                 <li key={index}>
-                  <a
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    {...bem('link')}
-                  >
+                  <a href={link.href} target="_blank" rel="noopener noreferrer" {...bem('link')}>
                     {link.label}
                   </a>
                 </li>

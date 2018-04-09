@@ -6,15 +6,7 @@ import './Button.scss'
 
 const bem = new BEMHelper('button')
 
-const Button = ({
-  children,
-  style,
-  href,
-  external,
-  className,
-  styleObject,
-  icon,
-}) => {
+const Button = ({ children, style, href, external, className, styleObject, icon }) => {
   const buttonProps = {
     className,
     style: styleObject,
