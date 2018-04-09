@@ -4,7 +4,7 @@ title: Berta Block, Berlin- Climbing Gym Review
 date: '2017-03-06'
 published: true
 tags: ['indoor']
-image: './03.jpg'
+image: './thumbnail.jpg'
 ---
 
 This is my first attempt at writing a climbing gym review. Berta Block is a symbolic place to me - I have started bouldering at that gym. I love this place because of its style and varieties of bouldering problems.
