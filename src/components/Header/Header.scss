@@ -8,15 +8,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+
+    @media (min-width: 700px) {
+      flex-direction: row;
+    }
   }
 
   .logo {
-    font-size: 4px;
-
-    @media (min-width: 400px) {
-      font-size: 6px;
-    }
+    font-size: 6px;
 
     @media (min-width: 700px) {
       font-size: 10px;
@@ -32,11 +32,22 @@
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5em;
+
+    @media (min-width: 700px) {
+      margin-top: 0;
+    }
   }
 
   &__list-item {
     display: block;
-    margin-left: 1em;
+    margin: 0.5em;
+
+    @media (min-width: 700px) {
+      margin-bottom: 0;
+    }
   }
 
   &__link {
