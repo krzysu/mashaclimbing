@@ -1,24 +1,21 @@
+@import '~stylesheets/vars';
+
 .post-item {
+  text-decoration: none;
+  display: block;
+  padding: 0.8em;
+  margin: -0.8em;
+
+  &:hover {
+    background-color: $color-reverse-alt;
+  }
+
   &__image {
     margin-bottom: 1em;
   }
 
   &__headline {
-    margin-bottom: 0;
-  }
-
-  &__headline-link {
-    color: #3d3d3d;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-    }
-  }
-
-  &__published {
-    color: #999;
+    margin-bottom: 0.5625em;
   }
 
   &__body {
