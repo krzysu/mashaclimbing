@@ -12,8 +12,7 @@ $active-color: $color-extra;
   text-decoration: none;
   color: $default-color;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: $active-color;
   }
 
