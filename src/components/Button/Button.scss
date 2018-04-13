@@ -20,25 +20,4 @@
     background-color: $color-extra;
     text-decoration: none;
   }
-
-  &--alt {
-    outline: 1px solid $color-reverse-alt;
-  }
-
-  &--with-icon {
-    position: relative;
-    padding-right: 3.5em;
-
-    &::before {
-      @include icon-base;
-
-      font-weight: normal;
-      font-size: 1.5em;
-
-      position: absolute;
-      right: 0.6em;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
 }

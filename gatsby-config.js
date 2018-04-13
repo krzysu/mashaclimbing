@@ -41,7 +41,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-emoji',
             options: {
-              emojiConversion: 'toImage',
+              emojiConversion: 'shortnameToUnicode',
             },
           },
         ],
