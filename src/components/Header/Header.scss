@@ -1,5 +1,7 @@
 @import '~stylesheets/vars';
 
+$break-point: 800px;
+
 .header {
   background: $color-reverse;
   padding: 1em 0;
@@ -10,20 +12,25 @@
     justify-content: space-between;
     flex-direction: column;
 
-    @media (min-width: 700px) {
+    @media (min-width: $break-point) {
       flex-direction: row;
     }
   }
 
   .logo {
-    font-size: 6px;
+    font-size: 8px;
 
-    @media (min-width: 700px) {
+    @media (min-width: $break-point) {
       font-size: 10px;
     }
+  }
 
-    @media (min-width: 1000px) {
-      font-size: 12px;
+  &__navigation {
+    @media (min-width: $break-point) {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
     }
   }
 
@@ -36,21 +43,24 @@
     flex-wrap: wrap;
     margin-top: 1.5em;
 
-    @media (min-width: 700px) {
+    @media (min-width: $break-point) {
       margin-top: 0;
+      margin-left: 1em;
     }
   }
 
   &__list-item {
     display: block;
-    margin: 0.5em;
+    margin: 0.3em;
 
-    @media (min-width: 700px) {
+    @media (min-width: $break-point) {
       margin-bottom: 0;
+      margin-top: 0;
     }
   }
 
   &__link {
+    display: block;
     text-decoration: none;
     font-size: 1.1111111111111112em;
     line-height: 1.35em;
@@ -63,6 +73,19 @@
 
     &--active {
       background-color: $color-reverse-alt;
+    }
+  }
+
+  &__icon-link {
+    display: flex;
+  }
+
+  &__icon {
+    width: 2.5em;
+    height: 2.5em;
+
+    &:hover {
+      fill: $color-extra;
     }
   }
 }

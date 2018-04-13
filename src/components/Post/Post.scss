@@ -7,6 +7,10 @@
 .post {
   padding: 1.5em 0;
 
+  a:hover {
+    color: $color-extra;
+  }
+
   &__image {
     margin-bottom: 2.5em;
   }
