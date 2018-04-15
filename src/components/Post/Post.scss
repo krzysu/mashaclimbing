@@ -23,16 +23,14 @@
     color: #999;
   }
 
-  img + em {
+  .gatsby-resp-image-link + em {
     text-align: center;
     display: block;
-    margin-top: -1.5em;
   }
 
-  .emojione {
-    display: inline-block;
-    margin: 0;
-    vertical-align: middle;
+  figcaption {
+    text-align: center;
+    font-style: italic;
   }
 
   @media (min-width: $break-point-m) {

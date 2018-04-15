@@ -28,6 +28,13 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 800,
+              showCaptions: true,
+            },
+          },
+          {
+            resolve: 'gatsby-remark-embed-video',
+            options: {
+              related: false,
             },
           },
           {
