@@ -20,6 +20,6 @@ Disadvantages:
 
 * quite pricy as for Thailand (entrance 475 THB)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ULQlLompmE8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+`youtube: https://www.youtube.com/watch?v=ULQlLompmE8`
 
 Want to go and check it out by yourself? See more information at the official website: [http://urbanplaygroundclimbing.com/](http://urbanplaygroundclimbing.com/)
