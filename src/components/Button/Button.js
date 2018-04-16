@@ -8,9 +8,8 @@ const bem = new BEMHelper('button')
 
 const Button = ({ children, href, external, className, styleObject }) => {
   const buttonProps = {
-    className,
     style: styleObject,
-    ...bem(),
+    ...bem(null, null, className),
   }
 
   if (external) {
