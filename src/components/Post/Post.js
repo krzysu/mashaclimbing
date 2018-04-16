@@ -21,17 +21,18 @@ const Post = ({ post, readNext }) => {
           <div dangerouslySetInnerHTML={{ __html: post.body }} />
         </div>
 
-        {false && (
-          <div className="post-footer">
-            <Button href="https://www.youtube.com/channel/UCgvXCOU2arITA586vGUbiSg" external={true}>
-              <YouTubeIcon className="post-footer__button-icon" />
-              watch more videos
-            </Button>
-          </div>
-        )}
+        <div className="post-footer">
+          <Button
+            className="post-footer__button"
+            href="https://www.youtube.com/channel/UCgvXCOU2arITA586vGUbiSg"
+            external={true}
+          >
+            <YouTubeIcon className="post-footer__button-icon" />
+            watch more videos
+          </Button>
+        </div>
       </div>
 
-      <Separator />
       {readNext && <ReadNext readNext={readNext} />}
       <Separator />
 

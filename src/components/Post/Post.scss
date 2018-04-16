@@ -4,7 +4,7 @@
 }
 
 .post {
-  padding: 1.5em 0;
+  padding: 1.5em 0 3em;
 
   a:hover {
     color: $color-extra;
@@ -40,10 +40,20 @@
 }
 
 .post-footer {
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+
+  &__button {
+    display: flex;
+    align-items: center;
+  }
+
   &__button-icon {
     width: 2em;
     height: 2em;
     fill: $color-reverse;
+    margin-right: 0.5em;
   }
 }
 
