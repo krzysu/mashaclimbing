@@ -11,7 +11,7 @@ const Page404 = () => {
           textAlign: 'center',
         }}
       >
-        <h1>404 - page not found</h1>
+        <h1>page not found</h1>
         <Button href="/">back to home</Button>
       </div>
       <div style={{ paddingBottom: '1.5em' }}>

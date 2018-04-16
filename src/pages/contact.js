@@ -4,6 +4,7 @@ import get from 'lodash/get'
 import { getEmail } from 'helpers'
 import Img from 'gatsby-image'
 import AuthorItem from 'components/AuthorItem/AuthorItem'
+import Separator from 'components/Separator/Separator'
 import './contact.scss'
 
 const ContactPage = ({ data }) => {
@@ -31,10 +32,10 @@ const ContactPage = ({ data }) => {
     <div className="contact-page">
       {coverImageSizes && <Img sizes={coverImageSizes} />}
 
-      <div className="wrapper contact-page__content">
+      <div className="wrapper">
         <div className="page__header">
           <h2 className="page__title">Contact</h2>
-          <ul>
+          <ul className="contact-page__content">
             {links.map((link, index) => {
               return (
                 <li key={index}>
@@ -51,6 +52,7 @@ const ContactPage = ({ data }) => {
               )
             })}
           </ul>
+          <Separator />
         </div>
       </div>
 
