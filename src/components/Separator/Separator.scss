@@ -1,0 +1,12 @@
+@import '~stylesheets/vars';
+
+.separator {
+  text-align: center;
+
+  &__icon {
+    width: 4em;
+    height: 4em;
+    transform: scaleX(1.3);
+    fill: $color-alt;
+  }
+}

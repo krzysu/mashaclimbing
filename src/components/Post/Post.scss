@@ -1,7 +1,6 @@
 @import '~stylesheets/vars';
 
 .post-wrapper {
-  // margin-bottom: 4.5em;
 }
 
 .post {
@@ -37,6 +36,14 @@
     p {
       text-align: justify;
     }
+  }
+}
+
+.post-footer {
+  &__button-icon {
+    width: 2em;
+    height: 2em;
+    fill: $color-reverse;
   }
 }
 
