@@ -23,7 +23,9 @@ Our plan was to chill, but we dropped our climbing shoes to the bike basket just
 
 I found a beautiful part for traversing, which starts in a small 'cave' if you can say so and goes the whole way around the wall. I have tried it already last year, but couldn't go so far. It was a pleasure to touch it again! I felt so much stronger than last year, it's an amazing feeling when you can easily do a move which you struggled with!
 
-![04](./04.jpg)
+<div class="image--80">
+    <img alt="04" src="./04.jpg" />
+</div>
 
 ![05](./05.jpg)
 

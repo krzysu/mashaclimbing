@@ -60,3 +60,24 @@
 .post-author-item {
   padding-bottom: 1.5em;
 }
+
+$image-break-point: 400px;
+.image {
+  &--120 {
+    margin: 0 -10%;
+  }
+
+  &--80 {
+    @media (min-width: $image-break-point) {
+      margin: 0 auto;
+      max-width: 80%;
+    }
+  }
+
+  &--60 {
+    @media (min-width: $image-break-point) {
+      margin: 0 auto;
+      max-width: 60%;
+    }
+  }
+}
