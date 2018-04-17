@@ -11,8 +11,7 @@ Autumn... I enjoy so much the beauty of nature this time of the year - falling l
 
 Happily, we found a day, probably the last day this year, to go outdoors and do a bit of rock climbing. The place I want to show is **Pełcznica**. It is a very small crag in south-western Poland, close to a town **Świebodzice**.
 
-![map](./01.jpg)
-_Coordinates: N 50° 50' 47.18'' , E 16° 16' 45.80''_
+<img alt="map" src="./01.jpg" title="Coordinates: N 50° 50' 47.18'' , E 16° 16' 45.80''"/>
 
 I believe you would never hear about this place if you don't know locals. The crag is located in the forest, it's very small and not visible from the road. Luckily Kris grew up in this region and showed me this lovely place.
 
