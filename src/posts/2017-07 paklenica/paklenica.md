@@ -1,5 +1,5 @@
 ---
-path: '/climbing-in-paklenica-croatia/'
+path: '/rock-climbing-paklenica-starigrad-croatia/'
 title: Climbing vacations in Paklenica, Croatia
 date: '2017-07-16'
 published: true
