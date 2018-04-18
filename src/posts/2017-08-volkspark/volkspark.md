@@ -1,10 +1,11 @@
 ---
-path: '/sunday-in-volkspark-friedrichshain/'
-title: Sunday in Volkspark Friedrichshain
+path: '/sunday-in-volkspark-friedrichshain-berlin/'
+title: 'Sunday in Volkspark Friedrichshain, Berlin'
 date: '2017-08-14'
 published: true
 tags: ['outdoor']
 image: './thumbnail.jpg'
+seo: 'Climbing outdoors in Volkspark Friedrichshain, one of the best parks in Berlin. You can find people jogging, cycling, doing yoga, skating, playing frisbee, volleyball, grilling. A place for all possible urban sports activities.'
 ---
 
 Usually on Sundays we go to a climbing gym. This time it was different - I felt sick. Nothing serious, but I was coughing the whole weekend and decided that it's not the best idea to run to a gym. Well, the day supposed to be quite lazy and relaxed..

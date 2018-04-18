@@ -1,10 +1,11 @@
 ---
 path: '/berta-block-berlin-climbing-gym-review/'
-title: Berta Block, Berlin- Climbing Gym Review
+title: Berta Block, Berlin - Climbing Gym Review
 date: '2017-03-06'
 published: true
 tags: ['indoor']
 image: './thumbnail.jpg'
+seo: 'Review of Berta Block, very popular climbing gym in Berlin. Read more about location, walls, training, entertainment and kids area. Climbing video included.'
 ---
 
 This is my first attempt at writing a climbing gym review. Berta Block is a symbolic place to me - I have started bouldering at that gym. I love this place because of its style and varieties of bouldering problems.
@@ -105,7 +106,7 @@ Adult daily price is **10 eur**. It’s the highest price for a bouldering gym i
 
 Berta Block also offers early bird option - Mo.-Fr. till 1 pm with the price 6 eur and they also have a variety of abonnements - 10, 20, 50 entries, half- or one-year membership cards. For more details please check the [official website](www.bertablock.de)
 
-***
+---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WB0d1PowQXM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 

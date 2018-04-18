@@ -5,6 +5,7 @@ date: '2018-02-26'
 published: true
 tags: ['travel', 'outdoor']
 image: './03-railay-beach.jpg'
+seo: 'Climbing in Railay & Tonsai Beach in Thailand. Watch a video about climbing in paradise. We found cheap accommodation in Rapala Bungalows. Climbing gear rental in Basecamp in Tonsai Beach.'
 ---
 
 Krabi was planned back in Berlin.. And here it is, climbing paradise - the dream came true!

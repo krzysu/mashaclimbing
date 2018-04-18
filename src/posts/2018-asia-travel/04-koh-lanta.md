@@ -5,6 +5,7 @@ date: '2018-03-04'
 published: true
 tags: ['travel']
 image: './04-ko-lanta.jpg'
+seo: 'Ko Lanta (Koh Lanta) is a beautiful green island in the south of Thailand. The best way to explore it is to rent a bike and drive around. Another activity is to visit Lanta Animal Welfare.'
 ---
 
 After a week of climbing at Railay beach, we moved to Koh Lanta.

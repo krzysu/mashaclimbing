@@ -5,6 +5,7 @@ date: '2017-10-09'
 published: true
 tags: ['travel','outdoor']
 image: './thumbnail.jpg'
+seo: 'Watch a video about outdoor rock climbing in Pelcznica. It is a very small crag in south-western Poland, close to a town Świebodzice. Great place to climb for a day or to work on a longer project.'
 ---
 
 Autumn... I enjoy so much the beauty of nature this time of the year - falling leaves, golden forests and last warm days. But days are getting shorter and colder and it also means the end of outdoor climbing season.

@@ -5,6 +5,7 @@ date: '2018-03-26'
 published: true
 tags: ['travel']
 image: './thumbnail.jpg'
+seo: 'Read about how to get from Ko Phangan (Koh Pha Ngan) to Railay Beach in Krabi province. How to find the bus station in Surat Thani. Travel by ferry, bus, minivan, and boat. How to avoid scam in Thailand.'
 ---
 
 During our travel through Thailand, as many other backpackers, we did not have the exact plan, but just several pins on the map with places we wished to visit. A party island **Ko Phangan** was one of them. We got there by plane. There is an easy connection from Bangkok to Surat Thani. At arrival, we bought a combined ticket _Surat Thani airport - bus to Donsak ferry - ferry to Ko Phangan_.

@@ -5,6 +5,7 @@ date: '2018-02-19'
 published: true
 tags: ['travel']
 image: './02-erawan.jpg'
+seo: 'Watch video about Erawan Waterfalls in Thailand. Located in Erawan National Park, this amazing trail consists of 7 beautiful waterfalls. Perfect place to cool down after the heat of Bangkok and swim along with fishes.'
 ---
 
 The next stop of our Asian trip is Erawan Waterfalls. Located in Erawan National Park, this amazing trail consists of 7 beautiful waterfalls. Perfect place to cool down after the heat of Bangkok and swim along with fishes!
