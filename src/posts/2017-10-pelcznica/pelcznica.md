@@ -25,9 +25,14 @@ Most of the routes are marked directly on the wall together with their grades an
 
 All routes are well bolted. Not all bolts are new, but mostly in good conditions.
 
-![bolt](./04.JPG)
-
-![bolt](./05.JPG)
+<div class="grid">
+    <div class="grid__item">
+        <img alt="bolt" src="./04.JPG" />
+    </div>
+    <div class="grid__item">
+        <img alt="bolt" src="./05.JPG" />
+    </div>
+</div>
 
 We sent a couple of nice routes and definitely planning to come back to work on harder ones! Here is a short video, which we recorded that day:
 
