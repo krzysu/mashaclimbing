@@ -8,12 +8,13 @@ const HeadMeta = props => {
   const blogDescription = props.site.siteMetadata.description
   const siteUrl = props.site.siteMetadata.siteUrl
   const excerpt = get(props, 'page.excerpt')
+  const seo = get(props, 'page.frontmatter.seo')
   const title = get(props, 'page.frontmatter.title')
   const path = props.pathname || get(props, 'page.frontmatter.path', '')
   const imageUrl = props.imageUrl || get(props, 'page.frontmatter.image.publicURL', '')
 
-  const metaTitle = title ? `${title} | ${blogTitle}` : `${blogTitle} | ${blogDescription}`
-  const metaDescription = excerpt || blogDescription
+  const metaTitle = title ? `${title} | ${blogTitle}` : blogTitle
+  const metaDescription = seo || excerpt || blogDescription
   const fullMetaImageUrl = siteUrl + imageUrl
   const fullPath = siteUrl + path
 
@@ -72,6 +73,7 @@ export const query = graphql`
       image {
         publicURL
       }
+      seo
     }
   }
 `

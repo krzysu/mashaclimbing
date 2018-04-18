@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Masha Climbing',
-    description: 'Best climbing and travel videos',
+    title: 'Masha Climbing Blog | climbing and travel videos made in Berlin',
+    description: `Climbing gym reviews, indoor and outdoor climbing spots, travel tips and recommendations, blog posts and videos. Made in Berlin.`,
     siteUrl: 'https://mashaclimbing.com',
   },
   pathPrefix: '/',
