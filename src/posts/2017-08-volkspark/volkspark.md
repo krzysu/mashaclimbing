@@ -12,8 +12,6 @@ Usually on Sundays we go to a climbing gym. This time it was different - I felt 
 
 In the afternoon we thought that it would be nice to get out of the apartment and have some fresh air in a park. We have a very nice park next to us - Volkspark Friedrichshain. It's one of the best parks in Berlin from my point of view! You can find people jogging, cycling, doing yoga, skating, playing frisbee, volleyball, grilling, etc. Really people do there all possible urban sport activities!
 
-![01](./01.jpg)
-
 Of course I have a special point in my list of activities - rock climbing. And you might be surprised, but there is a nice artificial climbing rock in the park! Ta-da! It's more a traverse wall with many nice lines and interesting problems to solve. It's a great place to combine picnic with some bouldering!
 
 ![02](./02.jpg)
