@@ -25,7 +25,7 @@ Most of the routes are marked directly on the wall together with their grades an
 
 All routes are well bolted. Not all bolts are new, but mostly in good conditions.
 
-<div class="grid">
+<div class="grid grid--outside">
     <div class="grid__item">
         <img alt="bolt" src="./04.JPG" />
     </div>
