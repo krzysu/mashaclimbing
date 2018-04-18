@@ -239,4 +239,8 @@ Camping is very popular here. Maybe next time :wink:
 
 We definitely enjoyed every single day and every moment of our trip! It's a beautiful country with amazing nature and I wish we had more time to explore it!
 
-Cheers everyone!
+Check out a short movie, which we made during our vacations. Don't hestitate to leave a comment on youtube or drop me a message by email. I will be happy to hear your feedback about rock climbing in Croatia. Don't forgett to subscribe to my channel for more traveling and climbing videos. :clapper: :clapper:
+
+`youtube: https://youtu.be/r-5-uX6-6Dg`
+
+Save travel everyone :airplane:
