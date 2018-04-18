@@ -13,7 +13,7 @@ Initially I did not think about writing and did not take a laptop, but I had a s
 
 It is not intended to be a tourist guide, but you might find some useful information for travelling though. Keep reading if you are interested.
 
-## July, 1st 
+## July, 1st
 
 ![01](./01.jpg 'Writing my diary')
 
@@ -69,7 +69,9 @@ It's the 4th day of our vacations and the 3rd day of climbing. The day was quite
 
 First of all we trained for **multi-pitching**. We did not have any experience of doing multi-pitch routes besides theory and a couple of practices at home. Today we took one easy route (4b) to not be stressed about climbing and focus on the process. Kris led it, built an anchor and belayed me from top. After I climbed to the top, we simply abseiled/repelled down one after another. Sounds quite simple, definitely not a rocket science, but it took us some time - more than an hour I think.
 
-![11](./11.jpg 'On anchor, multi-pitching training')
+<div class="image--80">
+    <img alt="11" src="./11.jpg" title="On anchor, multi-pitching training" />
+</div>
 
 Since it was our first real training we were slow, double checked everything and messed up a bit to be honest. But we did it! Which means, that we are ready for a real multi-pitch route! That's the plan for tomorrow. We are planning to take 2, maximum 3 pitches and train on them. The good thing is that the climbing region is huge and has plenty of routes, we already have a couple of them marked as a potential challenge.
 
@@ -83,11 +85,11 @@ That's our Sunday. Now it's about 6 p.m. and we found one more nice beach close 
 
 ## July, 3rd
 
-*** 08:00 ***
+**08:00**
 
 Challenge of the day - multi-pitching. Challenge accepted! Let's go...
 
-*** 20:00 ***
+**20:00**
 
 Well, we accepted the challenge but completely missed the goal..
 
@@ -107,7 +109,7 @@ We used fixed ropes a lot to pull ourselves up. We kept climbing up and up for a
 
 ![16](./16.jpg 'View')
 
-![17](./17.jpg 'Kris') 
+![17](./17.jpg 'Kris')
 
 ![18](./18.jpg 'Quite strong wind compensates the heat of the sun')
 
@@ -115,13 +117,11 @@ After a short break we had to go down. But we REALLY did not have any wish to hi
 
 ![19](./19.jpg 'Thinking about going down..')
 
-
 Then Kris saw some people on the next summit a bit further from us. Hope! If there are people - they must have hiked there somehow! Means we have a chance to have a better way down!
 
 So we made a decision to keep walking on the ridge of the mountain to the next summit (still up). The path run along very sharp rocks with many huge gaps in between. We walked slowly until we made it to the summit. **Anica Kuk, 712m**. What? Only 700 meters? We had a feeling that we climbed Everest :sweat_smile:
 
 ![20](./20.jpg 'View from Anica Kuk, 712m')
-
 
 Super exhausted we had to go down. The good thing was that Kris was right and it was a tourist hiking trail with no risky steps. At least no more challenges.
 
@@ -134,13 +134,13 @@ Summary:
 * Climbing gear was partially in use - we used harnesses and slings with carabiners for parts with fixed ropes.
 * We made it to the top! Not multi-pitching and without using the rope.
 * We reached to ridge of the mountain from one side, walked the whole way along it and came down from the other side of the mountain.
-* You never know what mountains prepared for you. Be ready! 
+* You never know what mountains prepared for you. Be ready!
 
 ![21](./21.jpg 'Plans vs reality')
 
 ## July, 4th
 
-Not much to say today. We decided to go climbing in the afternoon and spent the first half of the day on the beach. I cannot really lay down for hours on the beach and do nothing, so I found an entertainment for myself. There is an old tower right on the beach which is perfect for a short climbing/traversing session. 
+Not much to say today. We decided to go climbing in the afternoon and spent the first half of the day on the beach. I cannot really lay down for hours on the beach and do nothing, so I found an entertainment for myself. There is an old tower right on the beach which is perfect for a short climbing/traversing session.
 
 ![22](./22.jpg 'Old fortification tower at the beach Večka Kula, Starigrad')
 
@@ -160,19 +160,23 @@ Split is very beautiful! It's an old Roman city, just imagine the city center - 
 
 ![26](./26.jpg 'Roman architecture')
 
-![27](./27.jpg 'Streets of Split')
+<div class="image--80">
+    <img alt="27" src="./27.jpg" title="Streets of Split" />
+</div>
 
 Nevertheless we got tired of people quite fast :blush: and went to a beach. In the beginning we planned to go to a public beach Kasjuni Beach, but ended up on a wild cliff - perfect place to enjoy the sea and nature!
 
 ![28](./28.jpg 'Enjoying a wild cliff')
 
-On the way home we visited a UNESCO protected city **Trogir**. Honestly I did not like it at all! It's full of people, on every corner, every step. The old town is like an ant-hill packed with tourists. 
+On the way home we visited a UNESCO protected city **Trogir**. Honestly I did not like it at all! It's full of people, on every corner, every step. The old town is like an ant-hill packed with tourists.
 
 ![29](./29.jpg 'The only moment when there is nobody else on the street')
 
 ![30](./30.jpg 'Ice cream time')
 
-![31](./31.jpg 'Life of locals is exposed to passing tourists') 
+<div class="image--80">
+    <img alt="31" src="./31.jpg" title="Life of local people is exposed to passing tourists" />
+</div>
 
 Locals are trying to make money on it in all possible ways, even parking costs here 3 times more expensive than in Split - we paid 20 kuna for an hour. Super disappointed :disappointed:
 
@@ -180,17 +184,24 @@ Locals are trying to make money on it in all possible ways, even parking costs h
 
 Today is a very important day for us - we did our first **multi-pitching** route! Yaaay! Not the route we planned from the beginning, but it does not matter. What does matter is the result. We did 2 pitches 80, 4b line and spent there about 3 hours.
 
-![32](./32.jpg 'Abseil pista, 4b, 80 m, 2 pitches')
+<div class="image--80">
+    <img alt="32" src="./32.jpg" title="Abseil pista, 4b, 80 m, 2 pitches" />
+</div>
 
-What we definitely noticed is that multi-pitching lines are not so well-bolted as sport routes. Our line had 4-5 m distance between bolts. On the first glance it looked quite dangerous, but when I started to climb (I was leading) all fears disappeared and I was totally focused on climbing. In the end it was just 4b very positive line with many ledges and resting points. I guess a good experienced climber would laugh at us and would hardly call it an 'achievement'. But for us it definitely is! 
-
-![33](./33.jpg 'On the top')
+What we definitely noticed is that multi-pitching lines are not so well-bolted as sport routes. Our line had 4-5 m distance between bolts. On the first glance it looked quite dangerous, but when I started to climb (I was leading) all fears disappeared and I was totally focused on climbing. In the end it was just 4b very positive line with many ledges and resting points. I guess a good experienced climber would laugh at us and would hardly call it an 'achievement'. But for us it definitely is!
 
 ![34](./34.jpg 'Kris enjoying the view from top')
 
 The key point was to train building anchors, belaying from top and managing the rope. I think we did everything very clean and without any mistakes.
 
-![35](./35.jpg 'Kris abseiling')
+<div class="grid grid--outside">
+    <div class="grid__item">
+        <img alt="33" src="./33.jpg" title="On the top" />
+    </div>
+    <div class="grid__item">
+        <img alt="35" src="./35.jpg" title="Kris abseiling" />
+    </div>
+</div>
 
 The only thing where we failed - we did not use sun cream, because we came to the wall quite early and thought that we can finish it within one hour. As a result - 3 hours on the wall and a small sunburn.
 
@@ -204,7 +215,7 @@ Today is a rest day and another city trip. This time we drove to **Zadar**. Both
 
 ![36](./36.jpg 'Souvenir shop')
 
-Now we are sitting in one of coffee shops on the main square. It's late afternoon and we are tired of walking on the sun. It's a super hot day today, I guess now it's about +36C.  Kris is ~~falling asleep~~ reading a book :blush: and I'm just enjoying watching people passing by and drinking my cappuccino. I'm quite lazy to write to be honest..
+Now we are sitting in one of coffee shops on the main square. It's late afternoon and we are tired of walking on the sun. It's a super hot day today, I guess now it's about +36C. Kris is ~~falling asleep~~ reading a book :blush: and I'm just enjoying watching people passing by and drinking my cappuccino. I'm quite lazy to write to be honest..
 
 But a bit about Zadar. It is a typical Mediterranean city to me with narrow streets, small buildings and smell of fish from each restaurant. In many souvenir shops you can find lavender gifts - dolls, small bags and pillows. There is something about this plant in Croatia..
 
@@ -214,32 +225,32 @@ But a bit about Zadar. It is a typical Mediterranean city to me with narrow stre
 
 ![39](./39.jpg 'Lavender puppets')
 
-![40](./40.jpg 'Enjoying the sun')
+<div class="image--80">
+    <img alt="40" src="./40.jpg" title="Enjoying the sun" />
+</div>
 
 ## July, 10th
 
 Vacations are over. It's time to go home. Everything as its end so is our trip to Croatia. But the memories will stay.
 
-
-
 Backpacks are packed, we are sitting in the airport and waiting for boarding. I have some time to summarize last 12 days.
 
 * First of all Croatia is a great place for summer vacations. It has sea, warm sun, mountains, nature, good food. For every taste.
 * For active holidays it's better to go before July when the summer season starts. We have noticed that every days more and more people arrive, more people on the street, on the beach, in cities. Of course prices are raising in hot season as well. Plus the weather gets extremely hot (+36C is too much..)
-* It's nice to explore Croatia by car. The main highway is paid but it's cheap and fast - totally worth it. 
+* It's nice to explore Croatia by car. The main highway is paid but it's cheap and fast - totally worth it.
 * Prices are not cheap at all as we expected. The country is getting more and more touristic and locals are taking advantage of that. For example ironically but fish is the most expensive dish in every menu.
 * There are queues to major touristic areas. If you want to avoid them, come everywhere very early at about 9 a.m. or late afternoon after 4 p.m.
-* We spent the best time in Paklenica. Amazing nature, stunning views, great place for hiking and especially climbing. We did our first multi-pitching route! It opens new horizons in climbing to us! 
-Camping is very popular here. Maybe next time :wink:
+* We spent the best time in Paklenica. Amazing nature, stunning views, great place for hiking and especially climbing. We did our first multi-pitching route! It opens new horizons in climbing to us!
+  Camping is very popular here. Maybe next time :wink:
 * We've learned that good shoes are very important. Even when you plan to hike for only 30 min it can end up with 6 hours of hiking. Don't underestimate nature, hiking sandals are not the best option.
-* The Dalmatian coast is all covered with stones. To be comfortable on the beach you should have special rubber shoes. 
+* The Dalmatian coast is all covered with stones. To be comfortable on the beach you should have special rubber shoes.
 * Mosquitoes are very annoying in the night. Take a mosquito repellent with you.
-* Local fruits and vegetables are very good. Don't buy them in supermarket, but check out local stands along the street instead.  It's cheap, fresh and tasty!
+* Local fruits and vegetables are very good. Don't buy them in supermarket, but check out local stands along the street instead. It's cheap, fresh and tasty!
 * German and Polish languages are the way more welcome than English.
 
 We definitely enjoyed every single day and every moment of our trip! It's a beautiful country with amazing nature and I wish we had more time to explore it!
 
-Check out a short movie, which we made during our vacations. Don't hestitate to leave a comment on youtube or drop me a message by email. I will be happy to hear your feedback about rock climbing in Croatia. Don't forgett to subscribe to my channel for more traveling and climbing videos. :clapper: :clapper:
+Check out a short movie, which we made during our vacations. Don't hesitate to leave a comment on YouTube or drop me a message by email. I will be happy to hear your feedback about rock climbing in Croatia. Don't forget to subscribe to my channel for more traveling and climbing videos. :clapper: :clapper:
 
 `youtube: https://youtu.be/r-5-uX6-6Dg`
 
