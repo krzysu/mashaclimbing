@@ -20,8 +20,10 @@ const HeadMeta = props => {
 
   return (
     <Helmet>
+      <html lang="en" />
       <title>{metaTitle}</title>
       <meta name="description" content={metaDescription} />
+      <meta name="canonical" content={fullPath} />
 
       <meta property="og:title" content={metaTitle} />
       <meta property="og:description" content={metaDescription} />
