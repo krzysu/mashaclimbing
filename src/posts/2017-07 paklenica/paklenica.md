@@ -254,4 +254,4 @@ Check out a short movie, which we made during our vacations. Don't hesitate to l
 
 `youtube: https://youtu.be/r-5-uX6-6Dg`
 
-Save travel everyone :airplane:
+Safe travel everyone :airplane:

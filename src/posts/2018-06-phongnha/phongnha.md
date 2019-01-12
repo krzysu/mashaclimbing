@@ -30,4 +30,4 @@ Check out the video we made during the trip and leave your comment there!
 
 `youtube: https://youtu.be/u16ATPBzSRk`
 
-Save travel everyone :airplane:
+Safe travel everyone :airplane:
