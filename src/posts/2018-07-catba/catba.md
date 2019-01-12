@@ -22,4 +22,4 @@ Check out our video from Cat Ba and leave me a comment on Youtube, whether you'v
 
 `youtube: https://youtu.be/cnqah4xlc_U`
 
-Save travel everyone :airplane:
+Safe travel everyone :airplane:
