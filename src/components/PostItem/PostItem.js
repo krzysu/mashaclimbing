@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import BEMHelper from 'react-bem-helper'
 import isEmpty from 'lodash/isEmpty'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import './PostItem.scss'
 
@@ -13,7 +13,7 @@ const PostItem = ({ post, headlineTag }) => {
 
   return (
     <Link to={post.path} {...bem()}>
-      {!isEmpty(post.imageSizes) && <Img sizes={post.imageSizes} {...bem('image')} />}
+      {!isEmpty(post.imageSizes) && <Img fluid={post.imageSizes} {...bem('image')} />}
       <Headline {...bem('headline')}>{post.title}</Headline>
       <p {...bem('body')}>{post.excerpt}</p>
     </Link>

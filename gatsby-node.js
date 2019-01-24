@@ -3,18 +3,15 @@ const path = require('path')
 const get = require('lodash/get')
 const kebabCase = require('lodash/kebabCase')
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
 
   return new Promise((resolve, reject) => {
     resolve(
       graphql(
         `
           {
-            allMarkdownRemark(
-              sort: { fields: [frontmatter___date], order: DESC }
-              limit: 1000
-            ) {
+            allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
               edges {
                 node {
                   excerpt
@@ -25,7 +22,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     tags
                     image {
                       childImageSharp {
-                        sizes(maxWidth: 800) {
+                        fluid(maxWidth: 800) {
                           base64
                           aspectRatio
                           src
@@ -101,11 +98,12 @@ const getReadNextPosts = (posts, currentPost) => {
 }
 
 const getPostItemFlatData = edge => {
+  console.log(edge)
   return {
     path: edge.node.frontmatter.path,
     date: edge.node.frontmatter.date,
     title: edge.node.frontmatter.title,
     excerpt: edge.node.excerpt,
-    imageSizes: get(edge, 'node.frontmatter.image.childImageSharp.sizes', {}),
+    imageSizes: get(edge, 'node.frontmatter.image.childImageSharp.fluid', {}),
   }
 }

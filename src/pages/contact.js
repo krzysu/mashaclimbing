@@ -1,14 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
 import get from 'lodash/get'
-import { getEmail } from 'helpers'
+import { getEmail } from 'src/helpers'
 import Img from 'gatsby-image'
-import AuthorItem from 'components/AuthorItem/AuthorItem'
-import Separator from 'components/Separator/Separator'
+import Layout from 'src/components/Layout'
+import AuthorItem from 'src/components/AuthorItem/AuthorItem'
+import Separator from 'src/components/Separator/Separator'
 import './contact.scss'
 
-const ContactPage = ({ data }) => {
-  const coverImageSizes = get(data, 'coverImage.sizes')
+const ContactPage = ({ location, data }) => {
+  const coverImageSizes = get(data, 'coverImage.fluid')
 
   const links = [
     {
@@ -29,49 +31,56 @@ const ContactPage = ({ data }) => {
   ]
 
   return (
-    <div className="contact-page">
-      {coverImageSizes && <Img sizes={coverImageSizes} />}
+    <Layout location={location}>
+      <div className="contact-page">
+        {coverImageSizes && <Img fluid={coverImageSizes} />}
 
-      <div className="wrapper">
-        <div className="page__header">
-          <h2 className="page__title">Contact</h2>
-          <ul className="contact-page__content">
-            {links.map((link, index) => {
-              return (
-                <li key={index}>
-                  <span>{link.label}</span>{' '}
-                  <a
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="contact-page__link"
-                  >
-                    {link.value}
-                  </a>
-                </li>
-              )
-            })}
-          </ul>
-          <Separator />
-        </div>
-      </div>
-
-      <div className="contact-page__author-item">
         <div className="wrapper">
-          <AuthorItem />
+          <div className="page__header">
+            <h2 className="page__title">Contact</h2>
+            <ul className="contact-page__content">
+              {links.map((link, index) => {
+                return (
+                  <li key={index}>
+                    <span>{link.label}</span>{' '}
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="contact-page__link"
+                    >
+                      {link.value}
+                    </a>
+                  </li>
+                )
+              })}
+            </ul>
+            <Separator />
+          </div>
+        </div>
+
+        <div className="contact-page__author-item">
+          <div className="wrapper">
+            <AuthorItem />
+          </div>
         </div>
       </div>
-    </div>
+    </Layout>
   )
+}
+
+ContactPage.propTypes = {
+  location: PropTypes.object,
+  data: PropTypes.object,
 }
 
 export default ContactPage
 
 export const pageQuery = graphql`
-  query ContactPage {
-    coverImage: imageSharp(id: { regex: "/cover.jpg/" }) {
-      sizes(maxWidth: 1600, maxHeight: 400) {
-        ...GatsbyImageSharpSizes
+  {
+    coverImage: imageSharp(fluid: { originalName: { regex: "/cover.jpg/" } }) {
+      fluid(maxWidth: 1600, maxHeight: 400) {
+        ...GatsbyImageSharpFluid
       }
     }
   }

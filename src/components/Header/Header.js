@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import BEMHelper from 'react-bem-helper'
-import Link from 'gatsby-link'
-import { getTagLinks } from 'helpers'
-import Logo from 'components/Logo/Logo'
-import { InstagramIcon, YouTubeIcon } from 'components/Icons'
+import { Link } from 'gatsby'
+import { getTagLinks } from '../../helpers'
+import Logo from '../../components/Logo/Logo'
+import { InstagramIcon, YouTubeIcon } from '../../components/Icons'
 import './Header.scss'
 
 const bem = new BEMHelper('header')
