@@ -98,7 +98,6 @@ const getReadNextPosts = (posts, currentPost) => {
 }
 
 const getPostItemFlatData = edge => {
-  console.log(edge)
   return {
     path: edge.node.frontmatter.path,
     date: edge.node.frontmatter.date,

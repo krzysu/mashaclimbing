@@ -62,12 +62,14 @@ module.exports = {
         trackingId: `UA-9904630-22`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-google-fonts`,
-    //   options: {
-    //     fonts: ['Lato', 'Merriweather:400,900', 'Yellowtail'],
-    //   },
-    // },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Lato', 'Merriweather:400,900', 'Yellowtail'],
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-root-import`,
