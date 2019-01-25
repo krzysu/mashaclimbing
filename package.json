@@ -44,6 +44,7 @@
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write 'src/**/*.js' 'src/**/*.md'",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "serve": "gatsby serve"
   }
 }

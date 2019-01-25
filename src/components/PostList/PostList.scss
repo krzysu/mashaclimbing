@@ -6,12 +6,12 @@
     max-width: none;
 
     @media (min-width: 700px) {
-      flex-basis: 40%;
+      flex-basis: 40% !important;
       max-width: 45%;
     }
 
     @media (min-width: 1000px) {
-      flex-basis: 25%;
+      flex-basis: 25% !important;
       max-width: 30%;
     }
   }
