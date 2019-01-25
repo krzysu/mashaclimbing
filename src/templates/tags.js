@@ -1,39 +1,43 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import get from 'lodash/get'
 import startCase from 'lodash/startCase'
-import { getPostItemFlatData } from 'helpers'
-import Img from 'gatsby-image'
-import PostList from 'components/PostList/PostList'
-import AuthorItem from 'components/AuthorItem/AuthorItem'
+import { getPostItemFlatData } from 'src/helpers'
+import Layout from 'src/components/Layout'
+import PostList from 'src/components/PostList/PostList'
+import AuthorItem from 'src/components/AuthorItem/AuthorItem'
 import './tags.scss'
 
-const TagsTemplate = ({ pathContext, data, location }) => {
+const TagsTemplate = ({ location, pageContext, data }) => {
   const posts = get(data, 'allMarkdownRemark.edges', [])
-  const coverImageSizes = get(data, 'coverImage.sizes')
+  const coverImageSizes = get(data, 'coverImage.fluid')
 
   const flatPosts = posts.map(getPostItemFlatData)
 
   return (
-    <div>
-      {coverImageSizes && <Img sizes={coverImageSizes} />}
-      <div className="wrapper wrapper--wide">
-        <div className="page__header">
-          <h2 className="page__title">{startCase(pathContext.tag)}</h2>
+    <Layout location={location}>
+      <div>
+        {coverImageSizes && <Img fluid={coverImageSizes} />}
+        <div className="wrapper wrapper--wide">
+          <div className="page__header">
+            <h2 className="page__title">{startCase(pageContext.tag)}</h2>
+          </div>
+          <PostList flatPosts={flatPosts} />
         </div>
-        <PostList flatPosts={flatPosts} />
-      </div>
-      <div className="tags-page__author-item">
-        <div className="wrapper">
-          <AuthorItem />
+        <div className="tags-page__author-item">
+          <div className="wrapper">
+            <AuthorItem />
+          </div>
         </div>
       </div>
-    </div>
+    </Layout>
   )
 }
 
 TagsTemplate.propTypes = {
-  pathContext: PropTypes.shape({
+  pageContext: PropTypes.shape({
     tag: PropTypes.string.isRequired,
   }),
   data: PropTypes.object,
@@ -42,10 +46,10 @@ TagsTemplate.propTypes = {
 export default TagsTemplate
 
 export const pageQuery = graphql`
-  query TagPage($tag: String) {
-    coverImage: imageSharp(id: { regex: "/cover.jpg/" }) {
-      sizes(maxWidth: 1600, maxHeight: 400) {
-        ...GatsbyImageSharpSizes
+  query($tag: String) {
+    coverImage: imageSharp(fluid: { originalName: { regex: "/cover.jpg/" } }) {
+      fluid(maxWidth: 1600, maxHeight: 400) {
+        ...GatsbyImageSharpFluid
       }
     }
     allMarkdownRemark(
@@ -61,8 +65,8 @@ export const pageQuery = graphql`
             path
             image {
               childImageSharp {
-                sizes(maxWidth: 800) {
-                  ...GatsbyImageSharpSizes
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

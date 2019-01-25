@@ -1,5 +1,5 @@
 import React from 'react'
-import { MountainIcon } from 'components/Icons'
+import { MountainIcon } from 'src/components/Icons'
 import './Separator.scss'
 
 const Separator = () => {

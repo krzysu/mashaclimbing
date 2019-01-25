@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import AuthorItem from 'components/AuthorItem/AuthorItem'
+import AuthorItem from 'src/components/AuthorItem/AuthorItem'
 import Img from 'gatsby-image'
-import ReadNext from 'components/ReadNext/ReadNext'
-import Button from 'components/Button/Button'
-import Separator from 'components/Separator/Separator'
-import { YouTubeIcon } from 'components/Icons'
+import ReadNext from 'src/components/ReadNext/ReadNext'
+import Button from 'src/components/Button/Button'
+import Separator from 'src/components/Separator/Separator'
+import { YouTubeIcon } from 'src/components/Icons'
 import './Post.scss'
 
 const Post = ({ post, readNext }) => {
@@ -13,7 +13,7 @@ const Post = ({ post, readNext }) => {
     <div>
       <div className="wrapper post-wrapper">
         <div className="post">
-          {post.imageSizes && <Img sizes={post.imageSizes} className="post__image" />}
+          {post.imageSizes && <Img fluid={post.imageSizes} className="post__image" />}
           <h1 className="post__title">{post.title}</h1>
           <div className="post__published">
             <small>Published on {post.date}</small>
