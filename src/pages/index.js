@@ -1,39 +1,43 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import BEMHelper from 'react-bem-helper'
 import get from 'lodash/get'
-import { getPostItemFlatData } from 'helpers'
-import Img from 'gatsby-image'
-import PostList from 'components/PostList/PostList'
-import AuthorItem from 'components/AuthorItem/AuthorItem'
+import { getPostItemFlatData } from 'src/helpers'
+import Layout from 'src/components/Layout'
+import PostList from 'src/components/PostList/PostList'
+import AuthorItem from 'src/components/AuthorItem/AuthorItem'
 import './index.scss'
 
 const bem = new BEMHelper('index-page')
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ location, data }) => {
   const posts = get(data, 'allMarkdownRemark.edges', [])
-  const coverImageSizes = get(data, 'coverImage.sizes')
+  const coverImageSizes = get(data, 'coverImage.fluid')
 
   const flatPosts = posts.map(getPostItemFlatData)
 
   return (
-    <div {...bem()}>
-      {coverImageSizes && <Img sizes={coverImageSizes} />}
+    <Layout location={location}>
+      <div {...bem()}>
+        {coverImageSizes && <Img fluid={coverImageSizes} />}
 
-      <div className="wrapper wrapper--wide">
-        <div className="page__header">
-          <h2 className="page__title">Blog</h2>
+        <div className="wrapper wrapper--wide">
+          <div className="page__header">
+            <h2 className="page__title">Blog</h2>
+          </div>
+
+          <PostList flatPosts={flatPosts} />
         </div>
 
-        <PostList flatPosts={flatPosts} />
-      </div>
-
-      <div {...bem('author-item')}>
-        <div className="wrapper">
-          <AuthorItem />
+        <div {...bem('author-item')}>
+          <div className="wrapper">
+            <AuthorItem />
+          </div>
         </div>
       </div>
-    </div>
+    </Layout>
   )
 }
 
@@ -44,10 +48,10 @@ IndexPage.propTypes = {
 export default IndexPage
 
 export const pageQuery = graphql`
-  query IndexPage {
-    coverImage: imageSharp(id: { regex: "/cover.jpg/" }) {
-      sizes(maxWidth: 1600, maxHeight: 400) {
-        ...GatsbyImageSharpSizes
+  {
+    coverImage: imageSharp(fluid: { originalName: { regex: "/cover.jpg/" } }) {
+      fluid(maxWidth: 1600, maxHeight: 400) {
+        ...GatsbyImageSharpFluid
       }
     }
     allMarkdownRemark(
@@ -63,8 +67,8 @@ export const pageQuery = graphql`
             path
             image {
               childImageSharp {
-                sizes(maxWidth: 800) {
-                  ...GatsbyImageSharpSizes
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

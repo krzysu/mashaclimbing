@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import BEMHelper from 'react-bem-helper'
-import PostItem from 'components/PostItem/PostItem'
+import PostItem from 'src/components/PostItem/PostItem'
 import './PostList.scss'
 
 const bem = new BEMHelper('post-list')

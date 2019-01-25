@@ -1,7 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import BEMHelper from 'react-bem-helper'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import './Footer.scss'
 
 const bem = new BEMHelper('footer')

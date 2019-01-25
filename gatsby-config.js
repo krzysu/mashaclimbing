@@ -63,14 +63,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        fonts: ['Lato', 'Merriweather:400,900', 'Yellowtail'],
+        google: {
+          families: ['Lato', 'Merriweather:400,900', 'Yellowtail'],
+        },
       },
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
-    'gatsby-plugin-resolve-src',
+    `gatsby-plugin-root-import`,
     'gatsby-plugin-sitemap',
   ],
 }

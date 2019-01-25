@@ -7,7 +7,7 @@ export const getPostFlatData = remark => {
     date: remark.frontmatter.date,
     title: remark.frontmatter.title,
     body: remark.html,
-    imageSizes: get(remark, 'frontmatter.image.childImageSharp.sizes'),
+    imageSizes: get(remark, 'frontmatter.image.childImageSharp.fluid'),
   }
 }
 
@@ -17,7 +17,7 @@ export const getPostItemFlatData = edge => {
     date: edge.node.frontmatter.date,
     title: edge.node.frontmatter.title,
     excerpt: edge.node.excerpt,
-    imageSizes: get(edge, 'node.frontmatter.image.childImageSharp.sizes', {}),
+    imageSizes: get(edge, 'node.frontmatter.image.childImageSharp.fluid', {}),
   }
 }
 

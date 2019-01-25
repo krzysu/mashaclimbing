@@ -1,25 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import { graphql } from 'gatsby'
 import get from 'lodash/get'
-import { getPostFlatData } from 'helpers'
-import HeadMeta from 'components/HeadMeta'
-import Post from 'components/Post/Post'
+import { getPostFlatData } from 'src/helpers'
+import Layout from 'src/components/Layout'
+import HeadMeta from 'src/components/HeadMeta'
+import Post from 'src/components/Post/Post'
 
 const PostTemplate = props => {
-  const readNext = get(props, 'pathContext.readNext')
+  const readNext = get(props, 'pageContext.readNext')
   const post = getPostFlatData(props.data.markdownRemark)
 
   return (
-    <div>
-      <HeadMeta site={props.data.headMetaSite} page={props.data.headMetaPage} />
-      <Post post={post} readNext={readNext} />
-    </div>
+    <Layout location={props.location}>
+      <div>
+        <HeadMeta site={props.data.headMetaSite} page={props.data.headMetaPage} />
+        <Post post={post} readNext={readNext} />
+      </div>
+    </Layout>
   )
 }
 
 PostTemplate.propTypes = {
-  pathContext: PropTypes.shape({
+  pageContext: PropTypes.shape({
     readNext: PropTypes.array.isRequired,
   }),
   data: PropTypes.object,
@@ -28,7 +31,7 @@ PostTemplate.propTypes = {
 export default PostTemplate
 
 export const pageQuery = graphql`
-  query PostPage($path: String!) {
+  query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       id
       html
@@ -37,8 +40,8 @@ export const pageQuery = graphql`
         date(formatString: "MMMM Do, YYYY")
         image {
           childImageSharp {
-            sizes(maxWidth: 800) {
-              ...GatsbyImageSharpSizes
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
