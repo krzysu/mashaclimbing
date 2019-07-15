@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "Kris Urbas",
   "dependencies": {
-    "gatsby": "^2.0.93",
+    "gatsby": "^2.13.22",
     "gatsby-image": "^2.0.27",
     "gatsby-plugin-google-analytics": "^2.0.10",
     "gatsby-plugin-react-helmet": "^3.0.5",
