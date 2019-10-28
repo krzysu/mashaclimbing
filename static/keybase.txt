@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/marimatush
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mashaclimbing.com
+  * I am marimatush (https://keybase.io/marimatush) on keybase.
+  * I have a public key ASBq51nCHsjTM6B5ZXf7JUTpcyj5X0rI8XiouI445c7EIwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01208c971a6d835df4ab460c07c8784d4bbfc1be4bfcce7b92d9b01458a3c8fc2f3a0a",
+      "host": "keybase.io",
+      "kid": "01206ae759c21ec8d333a0796577fb2544e97328f95f4ac8f178a8b88e38e5cec4230a",
+      "uid": "52cc0f931507b55a41bbbd60388ed119",
+      "username": "marimatush"
+    },
+    "merkle_root": {
+      "ctime": 1572299774,
+      "hash": "f45efa77f229a265b265fa07c6bcf9a30aa5ba0db548109c14fd61c395d89bd7d605a279477e592023ee530df03d20d0d07f261b20868b39dedc6b90cd04cefe",
+      "hash_meta": "e0a2e141c492ba3da2897ae73e528c3937a0726156076863efa73743d7b0278a",
+      "seqno": 8473611
+    },
+    "service": {
+      "entropy": "KZjjIdOs7JQYUPvAIyhd763B",
+      "hostname": "mashaclimbing.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.7.0"
+  },
+  "ctime": 1572299800,
+  "expire_in": 504576000,
+  "prev": "f09428430ca149282b4e74d556f2aad79456d8158b4b92b63ddbf4dc62ed739f",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgaudZwh7I0zOgeWV3+yVE6XMo+V9KyPF4qLiOOOXOxCMKp3BheWxvYWTESpcCCsQg8JQoQwyhSSgrTnTVVvKq15RW2BWLS5K2Pdv03GLtc5/EIOxxzRrumA4lkgyZuHTYF4CRFILnMQ+fUTsYIWMKx2j3AgHCo3NpZ8RAg9ZTsfgRj5nCJ/5HFAFNtIDb+cdwZA3SElAjrdN1NQmHfRqvwLqrskc7VUSHMrAC6W1tCUphHE4SaiKmwdDLBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIHRT9g+8V/Bgr8x0eNp1DSgIZY8waDv3UifcXGYfRGi3o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/marimatush
+
+==================================================================
